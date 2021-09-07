@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CollisionMDInfo | front</title>
+	<title>UserInfo | front</title>
 	<meta name="description" content="Documentation for front">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">front</a>
 				</li>
 				<li>
-					<a href="../modules/utils_ImageMetaData.html">utils/ImageMetaData</a>
+					<a href="../modules/components_UserList.html">components/UserList</a>
 				</li>
 				<li>
-					<a href="utils_ImageMetaData.CollisionMDInfo.html">CollisionMDInfo</a>
+					<a href="components_UserList.UserInfo.html">UserInfo</a>
 				</li>
 			</ul>
-			<h1>Interface CollisionMDInfo</h1>
+			<h1>Interface UserInfo</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CollisionMDInfo</span>
+						<span class="target">UserInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -83,9 +83,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_ImageMetaData.CollisionMDInfo.html#centerPosPixelOffset" class="tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_ImageMetaData.CollisionMDInfo.html#collisionType" class="tsd-kind-icon">collision<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_ImageMetaData.CollisionMDInfo.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_UserList.UserInfo.html#avatar" class="tsd-kind-icon">avatar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_UserList.UserInfo.html#nickname" class="tsd-kind-icon">nickname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_UserList.UserInfo.html#volume" class="tsd-kind-icon">volume</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_UserList.UserInfo.html#setVolume" class="tsd-kind-icon">set<wbr>Volume</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,34 +100,60 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="centerPosPixelOffset" class="tsd-anchor"></a>
-					<h3>center<wbr>Pos<wbr>Pixel<wbr>Offset</h3>
-					<div class="tsd-signature tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset<span class="tsd-signature-symbol">:</span> <a href="utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
+					<a name="avatar" class="tsd-anchor"></a>
+					<h3>avatar</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/utils/ImageMetaData.ts#L81">src/utils/ImageMetaData.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/components/UserList.tsx#L13">src/components/UserList.tsx:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="collisionType" class="tsd-anchor"></a>
-					<h3>collision<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">collision<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.ObjectCollisionFigureEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ObjectCollisionFigureEnum</a></div>
+					<a name="nickname" class="tsd-anchor"></a>
+					<h3>nickname</h3>
+					<div class="tsd-signature tsd-kind-icon">nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/utils/ImageMetaData.ts#L80">src/utils/ImageMetaData.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/components/UserList.tsx#L12">src/components/UserList.tsx:12</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="size" class="tsd-anchor"></a>
-					<h3>size</h3>
-					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="utils_ImageMetaData.Size.html" class="tsd-signature-type" data-tsd-kind="Interface">Size</a></div>
+					<a name="volume" class="tsd-anchor"></a>
+					<h3>volume</h3>
+					<div class="tsd-signature tsd-kind-icon">volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/utils/ImageMetaData.ts#L82">src/utils/ImageMetaData.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/components/UserList.tsx#L14">src/components/UserList.tsx:14</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setVolume" class="tsd-anchor"></a>
+					<h3>set<wbr>Volume</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Volume<span class="tsd-signature-symbol">(</span>volumnMultiplyValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/b9bcd7f/front/src/components/UserList.tsx#L15">src/components/UserList.tsx:15</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>volumnMultiplyValue: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -173,7 +205,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/components_SpaceCanvas.html">components/<wbr>Space<wbr>Canvas</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/components_UserList.html">components/<wbr>User<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -197,7 +229,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/utils_ImageInfoProvider.html">utils/<wbr>Image<wbr>Info<wbr>Provider</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/utils_ImageMetaData.html">utils/<wbr>Image<wbr>Meta<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -210,107 +242,32 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-kind-icon">Avatar<wbr>Image<wbr>Enum</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/utils_ImageMetaData.AvatarPartImageEnum.html" class="tsd-kind-icon">Avatar<wbr>Part<wbr>Image<wbr>Enum</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/utils_ImageMetaData.LayerLevelEnum.html" class="tsd-kind-icon">Layer<wbr>Level<wbr>Enum</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/utils_ImageMetaData.ObjectCollisionFigureEnum.html" class="tsd-kind-icon">Object<wbr>Collision<wbr>Figure<wbr>Enum</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.AvatarImageMD.html" class="tsd-kind-icon">Avatar<wbr>ImageMD</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.AvatarMDInfo.html" class="tsd-kind-icon">AvatarMDInfo</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.CollisionMDInfo.html" class="tsd-kind-icon">CollisionMDInfo</a>
+						<a href="components_UserList.UserInfo.html" class="tsd-kind-icon">User<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_ImageMetaData.CollisionMDInfo.html#centerPosPixelOffset" class="tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset</a>
+								<a href="components_UserList.UserInfo.html#avatar" class="tsd-kind-icon">avatar</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_ImageMetaData.CollisionMDInfo.html#collisionType" class="tsd-kind-icon">collision<wbr>Type</a>
+								<a href="components_UserList.UserInfo.html#nickname" class="tsd-kind-icon">nickname</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_ImageMetaData.CollisionMDInfo.html#size" class="tsd-kind-icon">size</a>
+								<a href="components_UserList.UserInfo.html#volume" class="tsd-kind-icon">volume</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="components_UserList.UserInfo.html#setVolume" class="tsd-kind-icon">set<wbr>Volume</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.ImageInfo.html" class="tsd-kind-icon">Image<wbr>Info</a>
+						<a href="components_UserList.UsersListProps.html" class="tsd-kind-icon">Users<wbr>List<wbr>Props</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.ImageMDInfo.html" class="tsd-kind-icon">ImageMDInfo</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.MapMakingInfo.html" class="tsd-kind-icon">Map<wbr>Making<wbr>Info</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.ObjectImageMD.html" class="tsd-kind-icon">Object<wbr>ImageMD</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.PixelData.html" class="tsd-kind-icon">Pixel<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_ImageMetaData.Size.html" class="tsd-kind-icon">Size</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#avatarImageMDs" class="tsd-kind-icon">avatar<wbr>ImageMDs</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#bigTreeMD" class="tsd-kind-icon">big<wbr>TreeMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#brownBearMD" class="tsd-kind-icon">brown<wbr>BearMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#brownHorseMD" class="tsd-kind-icon">brown<wbr>HorseMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#creamPandaMD" class="tsd-kind-icon">cream<wbr>PandaMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#grayBlockMD" class="tsd-kind-icon">gray<wbr>BlockMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#greenGrassMD" class="tsd-kind-icon">green<wbr>GrassMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#orangeFoxMD" class="tsd-kind-icon">orange<wbr>FoxMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#pinkPigMD" class="tsd-kind-icon">pink<wbr>PigMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#seaAndMountainMap1MMI" class="tsd-kind-icon">sea<wbr>And<wbr>Mountain<wbr>Map1MMI</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#seaAndMountainVer1MD" class="tsd-kind-icon">sea<wbr>And<wbr>Mountain<wbr>Ver1MD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#seaAndMountainVer2MD" class="tsd-kind-icon">sea<wbr>And<wbr>Mountain<wbr>Ver2MD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#smallTreeMD" class="tsd-kind-icon">small<wbr>TreeMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#whiteCatMD" class="tsd-kind-icon">white<wbr>CatMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#whiteRabbitMD" class="tsd-kind-icon">white<wbr>RabbitMD</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/utils_ImageMetaData.html#yellowDogMD" class="tsd-kind-icon">yellow<wbr>DogMD</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/components_UserList.html#UserList" class="tsd-kind-icon">User<wbr>List</a>
 					</li>
 				</ul>
 			</nav>
@@ -322,12 +279,13 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
