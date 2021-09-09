@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DrawInfo | front</title>
+	<title>OfferAnswerDto | front</title>
 	<meta name="description" content="Documentation for front">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,29 +55,42 @@
 					<a href="../modules.html">front</a>
 				</li>
 				<li>
-					<a href="../modules/utils_webGLUtils.html">utils/webGLUtils</a>
+					<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignalingHelper</a>
 				</li>
 				<li>
-					<a href="utils_webGLUtils.DrawInfo.html">DrawInfo</a>
+					<a href="utils_RTCSignalingHelper.OfferAnswerDto.html">OfferAnswerDto</a>
 				</li>
 			</ul>
-			<h1>Interface DrawInfo</h1>
+			<h1>Interface OfferAnswerDto</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>signaling 의 offer 와 answer 에서 교환되는 데이터 전송객체</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>offer 나 answer 를 보내는 socketID</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>offer 나 answer 를 받는 socketID</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>createOffer 나 createAnswer 로 만들어진 RTCSessionDescriptionInit</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="utils_ImageMetaData.ImageInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImageInfo</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">DrawInfo</span>
-							</li>
-						</ul>
+						<span class="target">OfferAnswerDto</span>
 					</li>
 				</ul>
 			</section>
@@ -88,12 +101,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="utils_webGLUtils.DrawInfo.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="utils_webGLUtils.DrawInfo.html#centerPosPixelOffset" class="tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_webGLUtils.DrawInfo.html#rotateRadian" class="tsd-kind-icon">rotate<wbr>Radian</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_webGLUtils.DrawInfo.html#scale" class="tsd-kind-icon">scale</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="utils_webGLUtils.DrawInfo.html#size" class="tsd-kind-icon">size</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="utils_webGLUtils.DrawInfo.html#tex" class="tsd-kind-icon">tex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#fromClientId" class="tsd-kind-icon">from<wbr>Client<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#sdp" class="tsd-kind-icon">sdp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#toClientId" class="tsd-kind-icon">to<wbr>Client<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,67 +111,33 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="centerPos" class="tsd-anchor"></a>
-					<h3>center<wbr>Pos</h3>
-					<div class="tsd-signature tsd-kind-icon">center<wbr>Pos<span class="tsd-signature-symbol">:</span> <a href="utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fromClientId" class="tsd-anchor"></a>
+					<h3>from<wbr>Client<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">from<wbr>Client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="utils_ImageMetaData.ImageInfo.html">ImageInfo</a>.<a href="utils_ImageMetaData.ImageInfo.html#centerPos">centerPos</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/ImageMetaData.ts#L76">src/utils/ImageMetaData.ts:76</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="centerPosPixelOffset" class="tsd-anchor"></a>
-					<h3>center<wbr>Pos<wbr>Pixel<wbr>Offset</h3>
-					<div class="tsd-signature tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset<span class="tsd-signature-symbol">:</span> <a href="utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="utils_ImageMetaData.ImageInfo.html">ImageInfo</a>.<a href="utils_ImageMetaData.ImageInfo.html#centerPosPixelOffset">centerPosPixelOffset</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/ImageMetaData.ts#L73">src/utils/ImageMetaData.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCSignalingHelper.ts#L10">src/utils/RTCSignalingHelper.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rotateRadian" class="tsd-anchor"></a>
-					<h3>rotate<wbr>Radian</h3>
-					<div class="tsd-signature tsd-kind-icon">rotate<wbr>Radian<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="sdp" class="tsd-anchor"></a>
+					<h3>sdp</h3>
+					<div class="tsd-signature tsd-kind-icon">sdp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RTCSessionDescriptionInit</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/webGLUtils.ts#L151">src/utils/webGLUtils.ts:151</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCSignalingHelper.ts#L12">src/utils/RTCSignalingHelper.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="scale" class="tsd-anchor"></a>
-					<h3>scale</h3>
-					<div class="tsd-signature tsd-kind-icon">scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="toClientId" class="tsd-anchor"></a>
+					<h3>to<wbr>Client<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/webGLUtils.ts#L150">src/utils/webGLUtils.ts:150</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="size" class="tsd-anchor"></a>
-					<h3>size</h3>
-					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="utils_ImageMetaData.Size.html" class="tsd-signature-type" data-tsd-kind="Interface">Size</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="utils_ImageMetaData.ImageInfo.html">ImageInfo</a>.<a href="utils_ImageMetaData.ImageInfo.html#size">size</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/ImageMetaData.ts#L75">src/utils/ImageMetaData.ts:75</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="tex" class="tsd-anchor"></a>
-					<h3>tex</h3>
-					<div class="tsd-signature tsd-kind-icon">tex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebGLTexture</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="utils_ImageMetaData.ImageInfo.html">ImageInfo</a>.<a href="utils_ImageMetaData.ImageInfo.html#tex">tex</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/ImageMetaData.ts#L74">src/utils/ImageMetaData.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCSignalingHelper.ts#L11">src/utils/RTCSignalingHelper.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,10 +218,10 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/utils_RTCGameUtils.html">utils/RTCGame<wbr>Utils</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignaling<wbr>Helper</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/utils_webGLUtils.html">utils/webGLUtils</a>
 					</li>
 				</ul>
@@ -253,47 +229,29 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/utils_webGLUtils.Camera.html" class="tsd-kind-icon">Camera</a>
+						<a href="../classes/utils_RTCSignalingHelper.default.html" class="tsd-kind-icon">default</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/utils_webGLUtils.default.html" class="tsd-kind-icon">default</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_RTCSignalingHelper.IceDto.html" class="tsd-kind-icon">Ice<wbr>Dto</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_webGLUtils.DrawInfo.html" class="tsd-kind-icon">Draw<wbr>Info</a>
+						<a href="utils_RTCSignalingHelper.OfferAnswerDto.html" class="tsd-kind-icon">Offer<wbr>Answer<wbr>Dto</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="utils_webGLUtils.DrawInfo.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="utils_webGLUtils.DrawInfo.html#centerPosPixelOffset" class="tsd-kind-icon">center<wbr>Pos<wbr>Pixel<wbr>Offset</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#fromClientId" class="tsd-kind-icon">from<wbr>Client<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_webGLUtils.DrawInfo.html#rotateRadian" class="tsd-kind-icon">rotate<wbr>Radian</a>
+								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#sdp" class="tsd-kind-icon">sdp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_webGLUtils.DrawInfo.html#scale" class="tsd-kind-icon">scale</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="utils_webGLUtils.DrawInfo.html#size" class="tsd-kind-icon">size</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="utils_webGLUtils.DrawInfo.html#tex" class="tsd-kind-icon">tex</a>
+								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#toClientId" class="tsd-kind-icon">to<wbr>Client<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/utils_webGLUtils.html#createProgramFromSource" class="tsd-kind-icon">create<wbr>Program<wbr>From<wbr>Source</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/utils_webGLUtils.html#isInRect" class="tsd-kind-icon">is<wbr>InRect</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/utils_webGLUtils.html#resizeCanvasToDisplaySize" class="tsd-kind-icon">resize<wbr>Canvas<wbr>ToDisplay<wbr>Size</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

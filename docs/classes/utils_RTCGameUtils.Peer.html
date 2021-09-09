@@ -68,6 +68,16 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>책임 : Peer 간 연결을 수립하여 localStream 전송한다.
+							Peer 간 연결을 통해 remoteStream 이 도착하면 AudioElement 에 업데이트한다.
+							dataChannel 을 통해 playerDto 를 받아서 자신의 상태를 계속하여 업데이트한다.
+						dataChannel 을 통해 연결된 peer 에게 me 의 상태를 전송한다.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -84,7 +94,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/utils_RTCGameUtils.IPlayer.html" class="tsd-signature-type" data-tsd-kind="Interface">IPlayer</a></li>
+					<li><a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,24 +110,25 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#audio" class="tsd-kind-icon">audio</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#avatar" class="tsd-kind-icon">avatar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#avatarFace" class="tsd-kind-icon">avatar<wbr>Face</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#avatarFaceScale" class="tsd-kind-icon">avatar<wbr>Face<wbr>Scale</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#canTrickleIceCandidates" class="tsd-kind-icon">can<wbr>Trickle<wbr>Ice<wbr>Candidates</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#connectedAudioElement" class="tsd-kind-icon">connected<wbr>Audio<wbr>Element</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#connectedClientSocketId" class="tsd-kind-icon">connected<wbr>Client<wbr>Socket<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#connectedClientSocketID" class="tsd-kind-icon">connected<wbr>Client<wbr>SocketID</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#connectionState" class="tsd-kind-icon">connection<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#currentLocalDescription" class="tsd-kind-icon">current<wbr>Local<wbr>Description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#currentRemoteDescription" class="tsd-kind-icon">current<wbr>Remote<wbr>Description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#dc" class="tsd-kind-icon">dc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#div" class="tsd-kind-icon">div</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Peer.html#dc" class="tsd-kind-icon">dc</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#iceConnectionState" class="tsd-kind-icon">ice<wbr>Connection<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#iceGatheringState" class="tsd-kind-icon">ice<wbr>Gathering<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#idpErrorInfo" class="tsd-kind-icon">idp<wbr>Error<wbr>Info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#idpLoginUrl" class="tsd-kind-icon">idp<wbr>Login<wbr>Url</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#isDeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#localDescription" class="tsd-kind-icon">local<wbr>Description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#maxSoundDistance" class="tsd-kind-icon">max<wbr>Sound<wbr>Distance</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#nickname" class="tsd-kind-icon">nickname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#nicknameDiv" class="tsd-kind-icon">nickname<wbr>Div</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#onconnectionstatechange" class="tsd-kind-icon">onconnectionstatechange</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#ondatachannel" class="tsd-kind-icon">ondatachannel</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#onicecandidate" class="tsd-kind-icon">onicecandidate</a></li>
@@ -134,8 +145,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#rotateRadian" class="tsd-kind-icon">rotate<wbr>Radian</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#sctp" class="tsd-kind-icon">sctp</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#signalingState" class="tsd-kind-icon">signaling<wbr>State</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#socketId" class="tsd-kind-icon">socket<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#volume" class="tsd-kind-icon">volume</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#socketID" class="tsd-kind-icon">socketID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#volumnMultiplyValue" class="tsd-kind-icon">volumn<wbr>Multiply<wbr>Value</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -160,9 +171,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#removeTrack" class="tsd-kind-icon">remove<wbr>Track</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#restartIce" class="tsd-kind-icon">restart<wbr>Ice</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#setConfiguration" class="tsd-kind-icon">set<wbr>Configuration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Peer.html#setEvent" class="tsd-kind-icon">set<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#setIdentityProvider" class="tsd-kind-icon">set<wbr>Identity<wbr>Provider</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#setLocalDescription" class="tsd-kind-icon">set<wbr>Local<wbr>Description</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#setRemoteDescription" class="tsd-kind-icon">set<wbr>Remote<wbr>Description</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#transmitUsingDataChannel" class="tsd-kind-icon">transmit<wbr>Using<wbr>Data<wbr>Channel</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#update" class="tsd-kind-icon">update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_RTCGameUtils.Peer.html#updateSoundFromVec2" class="tsd-kind-icon">update<wbr>Sound<wbr>From<wbr>Vec2</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-external"><a href="utils_RTCGameUtils.Peer.html#generateCertificate" class="tsd-kind-icon">generate<wbr>Certificate</a></li>
 							</ul>
@@ -176,32 +190,59 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Peer<span class="tsd-signature-symbol">(</span>connectedClientSocketId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, socketId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, audioContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, divContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, pcConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RTCConfiguration</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Peer<span class="tsd-signature-symbol">(</span>signalingHelper<span class="tsd-signature-symbol">: </span><a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a>, connectedClientSocketID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, localStream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MediaStream</span>, audio<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLAudioElement</span>, nicknameDiv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, connectionClosedDisconnectedFailedCallBack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, pcConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RTCConfiguration</span>, maxSoundDistance<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides RTCPeerConnection.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L178">src/utils/RTCGameUtils.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L273">src/utils/RTCGameUtils.ts:273</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>connectedClientSocketId: <span class="tsd-signature-type">string</span></h5>
+									<h5>signalingHelper: <a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h5>
 								</li>
 								<li>
-									<h5>socketId: <span class="tsd-signature-type">string</span></h5>
+									<h5>connectedClientSocketID: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>audioContainer: <span class="tsd-signature-type">Element</span></h5>
+									<h5>localStream: <span class="tsd-signature-type">MediaStream</span></h5>
 								</li>
 								<li>
-									<h5>divContainer: <span class="tsd-signature-type">HTMLDivElement</span></h5>
+									<h5>audio: <span class="tsd-signature-type">HTMLAudioElement</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> pcConfig: <span class="tsd-signature-type">RTCConfiguration</span></h5>
+									<h5>nicknameDiv: <span class="tsd-signature-type">HTMLDivElement</span></h5>
+								</li>
+								<li>
+									<h5>connectionClosedDisconnectedFailedCallBack: <span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>peer: <a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>pcConfig: <span class="tsd-signature-type">RTCConfiguration</span></h5>
+								</li>
+								<li>
+									<h5>maxSoundDistance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 500</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></h4>
@@ -212,13 +253,45 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="audio" class="tsd-anchor"></a>
+					<h3>audio</h3>
+					<div class="tsd-signature tsd-kind-icon">audio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLAudioElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L256">src/utils/RTCGameUtils.ts:256</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="avatar" class="tsd-anchor"></a>
 					<h3>avatar</h3>
 					<div class="tsd-signature tsd-kind-icon">avatar<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.IPlayer.html">IPlayer</a>.<a href="../interfaces/utils_RTCGameUtils.IPlayer.html#avatar">avatar</a></p>
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatar">avatar</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L170">src/utils/RTCGameUtils.ts:170</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L264">src/utils/RTCGameUtils.ts:264</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="avatarFace" class="tsd-anchor"></a>
+					<h3>avatar<wbr>Face</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Face<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarPartImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarPartImageEnum</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatarFace">avatarFace</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L265">src/utils/RTCGameUtils.ts:265</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="avatarFaceScale" class="tsd-anchor"></a>
+					<h3>avatar<wbr>Face<wbr>Scale</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Face<wbr>Scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatarFaceScale">avatarFaceScale</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L266">src/utils/RTCGameUtils.ts:266</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,29 +311,19 @@
 					<h3>center<wbr>Pos</h3>
 					<div class="tsd-signature tsd-kind-icon">center<wbr>Pos<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.IPlayer.html">IPlayer</a>.<a href="../interfaces/utils_RTCGameUtils.IPlayer.html#centerPos">centerPos</a></p>
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#centerPos">centerPos</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L171">src/utils/RTCGameUtils.ts:171</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L267">src/utils/RTCGameUtils.ts:267</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="connectedAudioElement" class="tsd-anchor"></a>
-					<h3>connected<wbr>Audio<wbr>Element</h3>
-					<div class="tsd-signature tsd-kind-icon">connected<wbr>Audio<wbr>Element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLAudioElement</span></div>
+					<a name="connectedClientSocketID" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> connected<wbr>Client<wbr>SocketID</h3>
+					<div class="tsd-signature tsd-kind-icon">connected<wbr>Client<wbr>SocketID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L165">src/utils/RTCGameUtils.ts:165</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="connectedClientSocketId" class="tsd-anchor"></a>
-					<h3>connected<wbr>Client<wbr>Socket<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">connected<wbr>Client<wbr>Socket<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L162">src/utils/RTCGameUtils.ts:162</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L249">src/utils/RTCGameUtils.ts:249</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -297,23 +360,13 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="dc" class="tsd-anchor"></a>
-					<h3>dc</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> dc</h3>
 					<div class="tsd-signature tsd-kind-icon">dc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RTCDataChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L164">src/utils/RTCGameUtils.ts:164</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="div" class="tsd-anchor"></a>
-					<h3>div</h3>
-					<div class="tsd-signature tsd-kind-icon">div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L166">src/utils/RTCGameUtils.ts:166</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L253">src/utils/RTCGameUtils.ts:253</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -361,16 +414,6 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isDeleted" class="tsd-anchor"></a>
-					<h3>is<wbr>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L176">src/utils/RTCGameUtils.ts:176</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="localDescription" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> local<wbr>Description</h3>
@@ -388,7 +431,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Sound<wbr>Distance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L167">src/utils/RTCGameUtils.ts:167</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L260">src/utils/RTCGameUtils.ts:260</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -397,9 +440,19 @@
 					<h3>nickname</h3>
 					<div class="tsd-signature tsd-kind-icon">nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.IPlayer.html">IPlayer</a>.<a href="../interfaces/utils_RTCGameUtils.IPlayer.html#nickname">nickname</a></p>
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#nickname">nickname</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L169">src/utils/RTCGameUtils.ts:169</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L263">src/utils/RTCGameUtils.ts:263</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nicknameDiv" class="tsd-anchor"></a>
+					<h3>nickname<wbr>Div</h3>
+					<div class="tsd-signature tsd-kind-icon">nickname<wbr>Div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L271">src/utils/RTCGameUtils.ts:271</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -551,9 +604,9 @@
 					<h3>rotate<wbr>Radian</h3>
 					<div class="tsd-signature tsd-kind-icon">rotate<wbr>Radian<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.IPlayer.html">IPlayer</a>.<a href="../interfaces/utils_RTCGameUtils.IPlayer.html#rotateRadian">rotateRadian</a></p>
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#rotateRadian">rotateRadian</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L172">src/utils/RTCGameUtils.ts:172</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L268">src/utils/RTCGameUtils.ts:268</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -580,23 +633,22 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="socketId" class="tsd-anchor"></a>
-					<h3>socket<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">socket<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="socketID" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> socketID</h3>
+					<div class="tsd-signature tsd-kind-icon">socketID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L163">src/utils/RTCGameUtils.ts:163</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L250">src/utils/RTCGameUtils.ts:250</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="volume" class="tsd-anchor"></a>
-					<h3>volume</h3>
-					<div class="tsd-signature tsd-kind-icon">volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="volumnMultiplyValue" class="tsd-anchor"></a>
+					<h3>volumn<wbr>Multiply<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">volumn<wbr>Multiply<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.IPlayer.html">IPlayer</a>.<a href="../interfaces/utils_RTCGameUtils.IPlayer.html#volume">volume</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L173">src/utils/RTCGameUtils.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L257">src/utils/RTCGameUtils.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1135,6 +1187,50 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setEvent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Event<span class="tsd-signature-symbol">(</span>signalingHelper<span class="tsd-signature-symbol">: </span><a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a>, connectionClosedDisconnectedFailedCallBack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L318">src/utils/RTCGameUtils.ts:318</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>signalingHelper: <a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h5>
+								</li>
+								<li>
+									<h5>connectionClosedDisconnectedFailedCallBack: <span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>peer: <a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="setIdentityProvider" class="tsd-anchor"></a>
 					<h3>set<wbr>Identity<wbr>Provider</h3>
@@ -1211,6 +1307,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="transmitUsingDataChannel" class="tsd-anchor"></a>
+					<h3>transmit<wbr>Using<wbr>Data<wbr>Channel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">transmit<wbr>Using<wbr>Data<wbr>Channel<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L385">src/utils/RTCGameUtils.ts:385</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L366">src/utils/RTCGameUtils.ts:366</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updateSoundFromVec2" class="tsd-anchor"></a>
 					<h3>update<wbr>Sound<wbr>From<wbr>Vec2</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1220,7 +1362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/600bd0b/front/src/utils/RTCGameUtils.ts#L231">src/utils/RTCGameUtils.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L376">src/utils/RTCGameUtils.ts:376</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1278,6 +1420,9 @@
 						<a href="../modules/components_Joystick.html">components/<wbr>Joystick</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/components_Message.html">components/<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/components_MicOnOff.html">components/<wbr>Mic<wbr>OnOff</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -1299,7 +1444,13 @@
 						<a href="../modules/components_ScreenShare.html">components/<wbr>Screen<wbr>Share</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/components_Setting.html">components/<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/components_SpaceCanvas.html">components/<wbr>Space<wbr>Canvas</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_UserList.html">components/<wbr>User<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/components_Welcome.html">components/<wbr>Welcome</a>
@@ -1311,7 +1462,7 @@
 						<a href="../modules/pages_spacePage_Space.html">pages/space<wbr>Page/<wbr>Space</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/reportWebVitals.html">report<wbr>Web<wbr>Vitals</a>
+						<a href="../modules/utils_IceServerList.html">utils/<wbr>Ice<wbr>Server<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/utils_IdProvider.html">utils/<wbr>IdProvider</a>
@@ -1326,12 +1477,21 @@
 						<a href="../modules/utils_RTCGameUtils.html">utils/RTCGame<wbr>Utils</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignaling<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/utils_webGLUtils.html">utils/webGLUtils</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.AudioAnalyser.html" class="tsd-kind-icon">Audio<wbr>Analyser</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.Me.html" class="tsd-kind-icon">Me</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -1341,7 +1501,16 @@
 								<a href="utils_RTCGameUtils.Peer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#audio" class="tsd-kind-icon">audio</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.Peer.html#avatar" class="tsd-kind-icon">avatar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#avatarFace" class="tsd-kind-icon">avatar<wbr>Face</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#avatarFaceScale" class="tsd-kind-icon">avatar<wbr>Face<wbr>Scale</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#canTrickleIceCandidates" class="tsd-kind-icon">can<wbr>Trickle<wbr>Ice<wbr>Candidates</a>
@@ -1350,10 +1519,7 @@
 								<a href="utils_RTCGameUtils.Peer.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#connectedAudioElement" class="tsd-kind-icon">connected<wbr>Audio<wbr>Element</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#connectedClientSocketId" class="tsd-kind-icon">connected<wbr>Client<wbr>Socket<wbr>Id</a>
+								<a href="utils_RTCGameUtils.Peer.html#connectedClientSocketID" class="tsd-kind-icon">connected<wbr>Client<wbr>SocketID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#connectionState" class="tsd-kind-icon">connection<wbr>State</a>
@@ -1364,11 +1530,8 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#currentRemoteDescription" class="tsd-kind-icon">current<wbr>Remote<wbr>Description</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="utils_RTCGameUtils.Peer.html#dc" class="tsd-kind-icon">dc</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#div" class="tsd-kind-icon">div</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#iceConnectionState" class="tsd-kind-icon">ice<wbr>Connection<wbr>State</a>
@@ -1382,9 +1545,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#idpLoginUrl" class="tsd-kind-icon">idp<wbr>Login<wbr>Url</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#isDeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#localDescription" class="tsd-kind-icon">local<wbr>Description</a>
 							</li>
@@ -1393,6 +1553,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.Peer.html#nickname" class="tsd-kind-icon">nickname</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#nicknameDiv" class="tsd-kind-icon">nickname<wbr>Div</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#onconnectionstatechange" class="tsd-kind-icon">onconnectionstatechange</a>
@@ -1443,10 +1606,10 @@
 								<a href="utils_RTCGameUtils.Peer.html#signalingState" class="tsd-kind-icon">signaling<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#socketId" class="tsd-kind-icon">socket<wbr>Id</a>
+								<a href="utils_RTCGameUtils.Peer.html#socketID" class="tsd-kind-icon">socketID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="utils_RTCGameUtils.Peer.html#volume" class="tsd-kind-icon">volume</a>
+								<a href="utils_RTCGameUtils.Peer.html#volumnMultiplyValue" class="tsd-kind-icon">volumn<wbr>Multiply<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#addEventListener" class="tsd-kind-icon">add<wbr>Event<wbr>Listener</a>
@@ -1505,6 +1668,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#setConfiguration" class="tsd-kind-icon">set<wbr>Configuration</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Peer.html#setEvent" class="tsd-kind-icon">set<wbr>Event</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#setIdentityProvider" class="tsd-kind-icon">set<wbr>Identity<wbr>Provider</a>
 							</li>
@@ -1513,6 +1679,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="utils_RTCGameUtils.Peer.html#setRemoteDescription" class="tsd-kind-icon">set<wbr>Remote<wbr>Description</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#transmitUsingDataChannel" class="tsd-kind-icon">transmit<wbr>Using<wbr>Data<wbr>Channel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Peer.html#update" class="tsd-kind-icon">update</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.Peer.html#updateSoundFromVec2" class="tsd-kind-icon">update<wbr>Sound<wbr>From<wbr>Vec2</a>
@@ -1528,7 +1700,10 @@
 						<a href="utils_RTCGameUtils.default.html" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/utils_RTCGameUtils.IPlayer.html" class="tsd-kind-icon">IPlayer</a>
+						<a href="../interfaces/utils_RTCGameUtils.AvatarFaceDto.html" class="tsd-kind-icon">Avatar<wbr>Face<wbr>Dto</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-kind-icon">Player<wbr>Dto</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-kind-icon">Vec2</a>
@@ -1551,6 +1726,10 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

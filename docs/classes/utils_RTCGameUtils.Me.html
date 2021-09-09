@@ -1,0 +1,626 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Me | front</title>
+	<meta name="description" content="Documentation for front">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">front</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">front</a>
+				</li>
+				<li>
+					<a href="../modules/utils_RTCGameUtils.html">utils/RTCGameUtils</a>
+				</li>
+				<li>
+					<a href="utils_RTCGameUtils.Me.html">Me</a>
+				</li>
+			</ul>
+			<h1>Class Me</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>책임 : 자기 avatar 의 모든 정보를 가지고 있고, update 가 호출되면 현재 위치, 방향 등의 정보를 업데이트함
+						내부적으로 AudioAnalyser 를 가지고 연결된 peer 들에게 전송해야 되는 데이터를 output 함</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Me</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#_nickname" class="tsd-kind-icon">_nickname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#audioAnalyser" class="tsd-kind-icon">audio<wbr>Analyser</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#avatar" class="tsd-kind-icon">avatar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#avatarFace" class="tsd-kind-icon">avatar<wbr>Face</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#avatarFaceScale" class="tsd-kind-icon">avatar<wbr>Face<wbr>Scale</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#isMoving" class="tsd-kind-icon">is<wbr>Moving</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#lastUpdateTimeStamp" class="tsd-kind-icon">last<wbr>Update<wbr>Time<wbr>Stamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#nextNormalizedDirectionVector" class="tsd-kind-icon">next<wbr>Normalized<wbr>Direction<wbr>Vector</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#nicknameDiv" class="tsd-kind-icon">nickname<wbr>Div</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#normalizedDirectionVector" class="tsd-kind-icon">normalized<wbr>Direction<wbr>Vector</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#rotateRadian" class="tsd-kind-icon">rotate<wbr>Radian</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#velocity" class="tsd-kind-icon">velocity</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#nickname" class="tsd-kind-icon">nickname</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#getPlayerDto" class="tsd-kind-icon">get<wbr>Player<wbr>Dto</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.Me.html#isCollision" class="tsd-kind-icon">is<wbr>Collision</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_RTCGameUtils.Me.html#update" class="tsd-kind-icon">update</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Me<span class="tsd-signature-symbol">(</span>nicknameDiv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, audioAnalyser<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.AudioAnalyser.html" class="tsd-signature-type" data-tsd-kind="Class">AudioAnalyser</a>, centerPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a>, nickname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, avatar<span class="tsd-signature-symbol">?: </span><a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a>, velocity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L121">src/utils/RTCGameUtils.ts:121</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nicknameDiv: <span class="tsd-signature-type">HTMLDivElement</span></h5>
+								</li>
+								<li>
+									<h5>audioAnalyser: <a href="utils_RTCGameUtils.AudioAnalyser.html" class="tsd-signature-type" data-tsd-kind="Class">AudioAnalyser</a></h5>
+								</li>
+								<li>
+									<h5>centerPos: <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h5>
+								</li>
+								<li>
+									<h5>nickname: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;익명의 곰&#x27;</span></h5>
+								</li>
+								<li>
+									<h5>avatar: <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+								<li>
+									<h5>velocity: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0.2</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_nickname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _nickname</h3>
+					<div class="tsd-signature tsd-kind-icon">_nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L102">src/utils/RTCGameUtils.ts:102</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="audioAnalyser" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> audio<wbr>Analyser</h3>
+					<div class="tsd-signature tsd-kind-icon">audio<wbr>Analyser<span class="tsd-signature-symbol">:</span> <a href="utils_RTCGameUtils.AudioAnalyser.html" class="tsd-signature-type" data-tsd-kind="Class">AudioAnalyser</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L120">src/utils/RTCGameUtils.ts:120</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="avatar" class="tsd-anchor"></a>
+					<h3>avatar</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatar">avatar</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L103">src/utils/RTCGameUtils.ts:103</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="avatarFace" class="tsd-anchor"></a>
+					<h3>avatar<wbr>Face</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Face<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarPartImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarPartImageEnum</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatarFace">avatarFace</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L104">src/utils/RTCGameUtils.ts:104</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="avatarFaceScale" class="tsd-anchor"></a>
+					<h3>avatar<wbr>Face<wbr>Scale</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Face<wbr>Scale<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#avatarFaceScale">avatarFaceScale</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L105">src/utils/RTCGameUtils.ts:105</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="centerPos" class="tsd-anchor"></a>
+					<h3>center<wbr>Pos</h3>
+					<div class="tsd-signature tsd-kind-icon">center<wbr>Pos<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#centerPos">centerPos</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L106">src/utils/RTCGameUtils.ts:106</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isMoving" class="tsd-anchor"></a>
+					<h3>is<wbr>Moving</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Moving<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L117">src/utils/RTCGameUtils.ts:117</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="lastUpdateTimeStamp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> last<wbr>Update<wbr>Time<wbr>Stamp</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Update<wbr>Time<wbr>Stamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L113">src/utils/RTCGameUtils.ts:113</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nextNormalizedDirectionVector" class="tsd-anchor"></a>
+					<h3>next<wbr>Normalized<wbr>Direction<wbr>Vector</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Normalized<wbr>Direction<wbr>Vector<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L116">src/utils/RTCGameUtils.ts:116</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nicknameDiv" class="tsd-anchor"></a>
+					<h3>nickname<wbr>Div</h3>
+					<div class="tsd-signature tsd-kind-icon">nickname<wbr>Div<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L110">src/utils/RTCGameUtils.ts:110</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="normalizedDirectionVector" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> normalized<wbr>Direction<wbr>Vector</h3>
+					<div class="tsd-signature tsd-kind-icon">normalized<wbr>Direction<wbr>Vector<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L115">src/utils/RTCGameUtils.ts:115</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="rotateRadian" class="tsd-anchor"></a>
+					<h3>rotate<wbr>Radian</h3>
+					<div class="tsd-signature tsd-kind-icon">rotate<wbr>Radian<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#rotateRadian">rotateRadian</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L107">src/utils/RTCGameUtils.ts:107</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="velocity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> velocity</h3>
+					<div class="tsd-signature tsd-kind-icon">velocity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L114">src/utils/RTCGameUtils.ts:114</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="nickname" class="tsd-anchor"></a>
+					<h3>nickname</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> nickname<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> nickname<span class="tsd-signature-symbol">(</span>nickname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#nickname">nickname</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L157">src/utils/RTCGameUtils.ts:157</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html">PlayerDto</a>.<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html#nickname">nickname</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L152">src/utils/RTCGameUtils.ts:152</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nickname: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getPlayerDto" class="tsd-anchor"></a>
+					<h3>get<wbr>Player<wbr>Dto</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Player<wbr>Dto<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L161">src/utils/RTCGameUtils.ts:161</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-signature-type" data-tsd-kind="Interface">PlayerDto</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isCollision" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Collision</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Collision<span class="tsd-signature-symbol">(</span>glHelper<span class="tsd-signature-symbol">: </span><a href="utils_webGLUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L172">src/utils/RTCGameUtils.ts:172</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>glHelper: <a href="utils_webGLUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>glHelper<span class="tsd-signature-symbol">: </span><a href="utils_webGLUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/994b2c2/front/src/utils/RTCGameUtils.ts#L202">src/utils/RTCGameUtils.ts:202</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>glHelper: <a href="utils_webGLUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_CreateRoom.html">components/<wbr>Create<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Descript.html">components/<wbr>Descript</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_EnterRoom.html">components/<wbr>Enter<wbr>Room</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Joystick.html">components/<wbr>Joystick</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Message.html">components/<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_MicOnOff.html">components/<wbr>Mic<wbr>OnOff</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_MoreInfo.html">components/<wbr>More<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Navigation.html">components/<wbr>Navigation</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Options.html">components/<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Panel.html">components/<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Profile.html">components/<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_ScreenShare.html">components/<wbr>Screen<wbr>Share</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Setting.html">components/<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_SpaceCanvas.html">components/<wbr>Space<wbr>Canvas</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_UserList.html">components/<wbr>User<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_Welcome.html">components/<wbr>Welcome</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/pages_homePage_Home.html">pages/home<wbr>Page/<wbr>Home</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/pages_spacePage_Space.html">pages/space<wbr>Page/<wbr>Space</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_IceServerList.html">utils/<wbr>Ice<wbr>Server<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_IdProvider.html">utils/<wbr>IdProvider</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_ImageInfoProvider.html">utils/<wbr>Image<wbr>Info<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_ImageMetaData.html">utils/<wbr>Image<wbr>Meta<wbr>Data</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/utils_RTCGameUtils.html">utils/RTCGame<wbr>Utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignaling<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/utils_webGLUtils.html">utils/webGLUtils</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.AudioAnalyser.html" class="tsd-kind-icon">Audio<wbr>Analyser</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.Me.html" class="tsd-kind-icon">Me</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#_nickname" class="tsd-kind-icon">_nickname</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#audioAnalyser" class="tsd-kind-icon">audio<wbr>Analyser</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#avatar" class="tsd-kind-icon">avatar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#avatarFace" class="tsd-kind-icon">avatar<wbr>Face</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#avatarFaceScale" class="tsd-kind-icon">avatar<wbr>Face<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#centerPos" class="tsd-kind-icon">center<wbr>Pos</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#isMoving" class="tsd-kind-icon">is<wbr>Moving</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#lastUpdateTimeStamp" class="tsd-kind-icon">last<wbr>Update<wbr>Time<wbr>Stamp</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#nextNormalizedDirectionVector" class="tsd-kind-icon">next<wbr>Normalized<wbr>Direction<wbr>Vector</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#nicknameDiv" class="tsd-kind-icon">nickname<wbr>Div</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#normalizedDirectionVector" class="tsd-kind-icon">normalized<wbr>Direction<wbr>Vector</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#rotateRadian" class="tsd-kind-icon">rotate<wbr>Radian</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#velocity" class="tsd-kind-icon">velocity</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#nickname" class="tsd-kind-icon">nickname</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#getPlayerDto" class="tsd-kind-icon">get<wbr>Player<wbr>Dto</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="utils_RTCGameUtils.Me.html#isCollision" class="tsd-kind-icon">is<wbr>Collision</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.Me.html#update" class="tsd-kind-icon">update</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.Peer.html" class="tsd-kind-icon">Peer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="utils_RTCGameUtils.default.html" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/utils_RTCGameUtils.AvatarFaceDto.html" class="tsd-kind-icon">Avatar<wbr>Face<wbr>Dto</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/utils_RTCGameUtils.PlayerDto.html" class="tsd-kind-icon">Player<wbr>Dto</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-kind-icon">Vec2</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
