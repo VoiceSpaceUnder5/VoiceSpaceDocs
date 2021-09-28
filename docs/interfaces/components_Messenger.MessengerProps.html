@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProfileProps | front</title>
+	<title>MessengerProps | front</title>
 	<meta name="description" content="Documentation for front">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">front</a>
 				</li>
 				<li>
-					<a href="../modules/components_Profile.html">components/Profile</a>
+					<a href="../modules/components_Messenger.html">components/Messenger</a>
 				</li>
 				<li>
-					<a href="components_Profile.ProfileProps.html">ProfileProps</a>
+					<a href="components_Messenger.MessengerProps.html">MessengerProps</a>
 				</li>
 			</ul>
-			<h1>Interface ProfileProps</h1>
+			<h1>Interface MessengerProps</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ProfileProps</span>
+						<span class="target">MessengerProps</span>
 					</li>
 				</ul>
 			</section>
@@ -83,15 +83,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_Profile.ProfileProps.html#avatar" class="tsd-kind-icon">avatar</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_Profile.ProfileProps.html#nickname" class="tsd-kind-icon">nickname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_Messenger.MessengerProps.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="components_Messenger.MessengerProps.html#messageArray" class="tsd-kind-icon">message<wbr>Array</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_Profile.ProfileProps.html#setAvatar" class="tsd-kind-icon">set<wbr>Avatar</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_Profile.ProfileProps.html#setNickname" class="tsd-kind-icon">set<wbr>Nickname</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_Messenger.MessengerProps.html#onClickPrevious" class="tsd-kind-icon">on<wbr>Click<wbr>Previous</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_Messenger.MessengerProps.html#onMessageInput" class="tsd-kind-icon">on<wbr>Message<wbr>Input</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="components_Messenger.MessengerProps.html#onSendMessage" class="tsd-kind-icon">on<wbr>Send<wbr>Message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,22 +101,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="avatar" class="tsd-anchor"></a>
-					<h3>avatar</h3>
-					<div class="tsd-signature tsd-kind-icon">avatar<span class="tsd-signature-symbol">:</span> <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a></div>
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Profile.tsx#L14">src/components/Profile.tsx:14</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Messenger.tsx#L14">src/components/Messenger.tsx:14</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="nickname" class="tsd-anchor"></a>
-					<h3>nickname</h3>
-					<div class="tsd-signature tsd-kind-icon">nickname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="messageArray" class="tsd-anchor"></a>
+					<h3>message<wbr>Array</h3>
+					<div class="tsd-signature tsd-kind-icon">message<wbr>Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Profile.tsx#L12">src/components/Profile.tsx:12</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Messenger.tsx#L12">src/components/Messenger.tsx:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -123,22 +124,39 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setAvatar" class="tsd-anchor"></a>
-					<h3>set<wbr>Avatar</h3>
+					<a name="onClickPrevious" class="tsd-anchor"></a>
+					<h3>on<wbr>Click<wbr>Previous</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Avatar<span class="tsd-signature-symbol">(</span>avatar<span class="tsd-signature-symbol">: </span><a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Click<wbr>Previous<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Profile.tsx#L15">src/components/Profile.tsx:15</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Messenger.tsx#L13">src/components/Messenger.tsx:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="onMessageInput" class="tsd-anchor"></a>
+					<h3>on<wbr>Message<wbr>Input</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Message<wbr>Input<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChangeEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLInputElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Messenger.tsx#L15">src/components/Messenger.tsx:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>avatar: <a href="../enums/utils_ImageMetaData.AvatarImageEnum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">AvatarImageEnum</a></h5>
+									<h5>e: <span class="tsd-signature-type">ChangeEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLInputElement</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -146,22 +164,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setNickname" class="tsd-anchor"></a>
-					<h3>set<wbr>Nickname</h3>
+					<a name="onSendMessage" class="tsd-anchor"></a>
+					<h3>on<wbr>Send<wbr>Message</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Nickname<span class="tsd-signature-symbol">(</span>nickname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Send<wbr>Message<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Profile.tsx#L13">src/components/Profile.tsx:13</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/a6efcd6/front/src/components/Messenger.tsx#L16">src/components/Messenger.tsx:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nickname: <span class="tsd-signature-type">string</span></h5>
+									<h5>e: <span class="tsd-signature-type">FormEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -177,38 +195,41 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/components_Profile.html">components/<wbr>Profile</a>
+						<a href="../modules/components_Messenger.html">components/<wbr>Messenger</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="components_Messenger.Message.html" class="tsd-kind-icon">Message</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="components_Profile.ProfileProps.html" class="tsd-kind-icon">Profile<wbr>Props</a>
+						<a href="components_Messenger.MessengerProps.html" class="tsd-kind-icon">Messenger<wbr>Props</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="components_Profile.ProfileProps.html#avatar" class="tsd-kind-icon">avatar</a>
+								<a href="components_Messenger.MessengerProps.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="components_Profile.ProfileProps.html#nickname" class="tsd-kind-icon">nickname</a>
+								<a href="components_Messenger.MessengerProps.html#messageArray" class="tsd-kind-icon">message<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="components_Profile.ProfileProps.html#setAvatar" class="tsd-kind-icon">set<wbr>Avatar</a>
+								<a href="components_Messenger.MessengerProps.html#onClickPrevious" class="tsd-kind-icon">on<wbr>Click<wbr>Previous</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="components_Profile.ProfileProps.html#setNickname" class="tsd-kind-icon">set<wbr>Nickname</a>
+								<a href="components_Messenger.MessengerProps.html#onMessageInput" class="tsd-kind-icon">on<wbr>Message<wbr>Input</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="components_Messenger.MessengerProps.html#onSendMessage" class="tsd-kind-icon">on<wbr>Send<wbr>Message</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/components_Profile.html#ProfileDropDown" class="tsd-kind-icon">Profile<wbr>Drop<wbr>Down</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/components_Profile.html#default" class="tsd-kind-icon">default</a>
+						<a href="../modules/components_Messenger.html#Messenger" class="tsd-kind-icon">Messenger</a>
 					</li>
 				</ul>
 			</nav>
