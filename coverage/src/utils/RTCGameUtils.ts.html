@@ -30,9 +30,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">6.78% </span>
+                <span class="strong">6.56% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/59</span>
+                <span class='fraction'>4/61</span>
             </div>
         
             
@@ -1446,41 +1446,13 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1509,6 +1481,35 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1533,7 +1534,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1980,7 +1980,7 @@ export class Peer extends RTCPeerConnection implements PlayerDto {
     });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.addEventListener('track', <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      if (!event.streams[0]) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!event.streams[0] &amp;&amp; event.track.kind === 'audio') {</span>
         const stream = <span class="cstat-no" title="statement not covered" >new MediaStream();</span>
 <span class="cstat-no" title="statement not covered" >        stream.addTrack(event.track);</span>
 <span class="cstat-no" title="statement not covered" >        this.audio.srcObject = stream;</span>
@@ -2182,14 +2182,15 @@ export default class PeerManager {
 <span class="cstat-no" title="statement not covered" >    if (this.screenVideoTracks.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >      peer.addEventListener('connectionstatechange', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        if (peer.connectionState === 'connected') {</span>
+          const stream = <span class="cstat-no" title="statement not covered" >new MediaStream();</span>
 <span class="cstat-no" title="statement not covered" >          this.screenVideoTracks.forEach(<span class="fstat-no" title="function not covered" >tr</span>ack =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >            try {</span>
-<span class="cstat-no" title="statement not covered" >              peer.addTrack(track);</span>
-<span class="cstat-no" title="statement not covered" >              this.peerOffer(peer);</span>
+<span class="cstat-no" title="statement not covered" >              peer.addTrack(track, stream);</span>
             } catch (error) {
-<span class="cstat-no" title="statement not covered" >              console.error('screenVideoTracks error!');</span>
+<span class="cstat-no" title="statement not covered" >              console.error(`screenVideoTracks error!`);</span>
             }
           });
+<span class="cstat-no" title="statement not covered" >          this.peerOffer(peer);</span>
         }
       });
     }
@@ -2277,7 +2278,6 @@ export default class PeerManager {
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  cl</span>ose(): void {
-<span class="cstat-no" title="statement not covered" >    console.log('peerManager close called');</span>
 <span class="cstat-no" title="statement not covered" >    this.peers.forEach(<span class="fstat-no" title="function not covered" >pe</span>er =&gt; {</span>
       const data: DataDto = <span class="cstat-no" title="statement not covered" >{</span>
         type: DataDtoType.SHARED_SCREEN_CLOSE,
@@ -2296,7 +2296,7 @@ export default class PeerManager {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Oct 03 2021 06:52:12 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 05 2021 02:53:00 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
