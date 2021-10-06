@@ -103,6 +103,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#dataChannelEventHandlers" class="tsd-kind-icon">data<wbr>Channel<wbr>Event<wbr>Handlers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#localStream" class="tsd-kind-icon">local<wbr>Stream</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#me" class="tsd-kind-icon">me</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#micDeviceID" class="tsd-kind-icon">mic<wbr>DeviceID</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#nicknameContainer" class="tsd-kind-icon">nickname<wbr>Container</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.default.html#pcConfig" class="tsd-kind-icon">pc<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#peers" class="tsd-kind-icon">peers</a></li>
@@ -110,6 +111,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#screenVideoTracks" class="tsd-kind-icon">screen<wbr>Video<wbr>Tracks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="utils_RTCGameUtils.default.html#signalingHelper" class="tsd-kind-icon">signaling<wbr>Helper</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#socketID" class="tsd-kind-icon">socketID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#speakerDeviceID" class="tsd-kind-icon">speaker<wbr>DeviceID</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_RTCGameUtils.default.html#trackEventHandler" class="tsd-kind-icon">track<wbr>Event<wbr>Handler</a></li>
 							</ul>
 						</section>
@@ -134,13 +136,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new default<span class="tsd-signature-symbol">(</span>signalingHelper<span class="tsd-signature-symbol">: </span><a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a>, localStream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MediaStream</span>, audioContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, nicknameContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, pcConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RTCConfiguration</span>, roomID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, me<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
+						<li class="tsd-signature tsd-kind-icon">new default<span class="tsd-signature-symbol">(</span>signalingHelper<span class="tsd-signature-symbol">: </span><a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a>, localStream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MediaStream</span>, audioContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, nicknameContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, pcConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RTCConfiguration</span>, roomID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, me<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a>, speakerDeviceID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, micDeviceID<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L616">src/utils/RTCGameUtils.ts:616</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L622">src/utils/RTCGameUtils.ts:622</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,6 +168,12 @@
 								<li>
 									<h5>me: <a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a></h5>
 								</li>
+								<li>
+									<h5>speakerDeviceID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;default&#x27;</span></h5>
+								</li>
+								<li>
+									<h5>micDeviceID: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;default&#x27;</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="utils_RTCGameUtils.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></h4>
 						</li>
@@ -180,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">audio<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L588">src/utils/RTCGameUtils.ts:588</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L588">src/utils/RTCGameUtils.ts:588</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">connection<wbr>Closed<wbr>Disconnected<wbr>Failed<wbr>Call<wbr>Back<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L590">src/utils/RTCGameUtils.ts:590</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L590">src/utils/RTCGameUtils.ts:590</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -221,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<wbr>Channel<wbr>Event<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/utils_RTCGameUtils.DataDtoType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DataDtoType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, peer<span class="tsd-signature-symbol">: </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L606">src/utils/RTCGameUtils.ts:606</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L606">src/utils/RTCGameUtils.ts:606</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">local<wbr>Stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MediaStream</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L587">src/utils/RTCGameUtils.ts:587</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L587">src/utils/RTCGameUtils.ts:587</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +249,17 @@
 					<div class="tsd-signature tsd-kind-icon">me<span class="tsd-signature-symbol">:</span> <a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L599">src/utils/RTCGameUtils.ts:599</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L599">src/utils/RTCGameUtils.ts:599</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="micDeviceID" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> mic<wbr>DeviceID</h3>
+					<div class="tsd-signature tsd-kind-icon">mic<wbr>DeviceID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L621">src/utils/RTCGameUtils.ts:621</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">nickname<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L589">src/utils/RTCGameUtils.ts:589</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L589">src/utils/RTCGameUtils.ts:589</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">pc<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RTCConfiguration</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L593">src/utils/RTCGameUtils.ts:593</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L593">src/utils/RTCGameUtils.ts:593</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +289,7 @@
 					<div class="tsd-signature tsd-kind-icon">peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L596">src/utils/RTCGameUtils.ts:596</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L596">src/utils/RTCGameUtils.ts:596</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">roomID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L602">src/utils/RTCGameUtils.ts:602</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L602">src/utils/RTCGameUtils.ts:602</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -291,7 +309,7 @@
 					<div class="tsd-signature tsd-kind-icon">screen<wbr>Video<wbr>Tracks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MediaStreamTrack</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L612">src/utils/RTCGameUtils.ts:612</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L612">src/utils/RTCGameUtils.ts:612</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -301,7 +319,7 @@
 					<div class="tsd-signature tsd-kind-icon">signaling<wbr>Helper<span class="tsd-signature-symbol">:</span> <a href="utils_RTCSignalingHelper.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L586">src/utils/RTCGameUtils.ts:586</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L586">src/utils/RTCGameUtils.ts:586</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -311,7 +329,17 @@
 					<div class="tsd-signature tsd-kind-icon">socketID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L615">src/utils/RTCGameUtils.ts:615</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L615">src/utils/RTCGameUtils.ts:615</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="speakerDeviceID" class="tsd-anchor"></a>
+					<h3>speaker<wbr>DeviceID</h3>
+					<div class="tsd-signature tsd-kind-icon">speaker<wbr>DeviceID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L618">src/utils/RTCGameUtils.ts:618</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -321,7 +349,7 @@
 					<div class="tsd-signature tsd-kind-icon">track<wbr>Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>peerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RTCTrackEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L609">src/utils/RTCGameUtils.ts:609</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L609">src/utils/RTCGameUtils.ts:609</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -362,7 +390,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L673">src/utils/RTCGameUtils.ts:673</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L687">src/utils/RTCGameUtils.ts:687</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -385,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L820">src/utils/RTCGameUtils.ts:820</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L841">src/utils/RTCGameUtils.ts:841</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -402,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L693">src/utils/RTCGameUtils.ts:693</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L708">src/utils/RTCGameUtils.ts:708</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -425,7 +453,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L681">src/utils/RTCGameUtils.ts:681</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L696">src/utils/RTCGameUtils.ts:696</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -466,7 +494,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L741">src/utils/RTCGameUtils.ts:741</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L762">src/utils/RTCGameUtils.ts:762</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -489,7 +517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L685">src/utils/RTCGameUtils.ts:685</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L700">src/utils/RTCGameUtils.ts:700</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -536,7 +564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e6e5efe/front/src/utils/RTCGameUtils.ts#L762">src/utils/RTCGameUtils.ts:762</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/04f1483/front/src/utils/RTCGameUtils.ts#L783">src/utils/RTCGameUtils.ts:783</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -594,6 +622,9 @@
 								<a href="utils_RTCGameUtils.default.html#me" class="tsd-kind-icon">me</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.default.html#micDeviceID" class="tsd-kind-icon">mic<wbr>DeviceID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.default.html#nicknameContainer" class="tsd-kind-icon">nickname<wbr>Container</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -613,6 +644,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.default.html#socketID" class="tsd-kind-icon">socketID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_RTCGameUtils.default.html#speakerDeviceID" class="tsd-kind-icon">speaker<wbr>DeviceID</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_RTCGameUtils.default.html#trackEventHandler" class="tsd-kind-icon">track<wbr>Event<wbr>Handler</a>
