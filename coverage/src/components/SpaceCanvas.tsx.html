@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/95</span>
+                <span class='fraction'>0/96</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/88</span>
+                <span class='fraction'>0/89</span>
             </div>
         
             
@@ -301,7 +301,13 @@
 <a name='L242'></a><a href='#L242'>242</a>
 <a name='L243'></a><a href='#L243'>243</a>
 <a name='L244'></a><a href='#L244'>244</a>
-<a name='L245'></a><a href='#L245'>245</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -325,6 +331,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -424,6 +431,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -503,6 +511,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -557,6 +569,7 @@ import PeerManager, {
 } from '../utils/RTCGameUtils';
 import GLHelper, {Camera} from '../utils/webGLUtils';
 import Joystick from './Joystick';
+import SpaceLoading from './SpaceLoading';
 &nbsp;
 interface SpaceCanvasProps {
   peerManager: PeerManager;
@@ -570,7 +583,7 @@ export interface LoadingInfo {
 &nbsp;
 function <span class="fstat-no" title="function not covered" >getPercentageFromLoadStatus(</span>loadStatus: LoadingInfo): number {
 <span class="cstat-no" title="statement not covered" >  if (!loadStatus.needToLoad) <span class="cstat-no" title="statement not covered" >return 0;</span></span>
-<span class="cstat-no" title="statement not covered" >  return 100 * Math.round(loadStatus.finishLoad / loadStatus.needToLoad);</span>
+<span class="cstat-no" title="statement not covered" >  return Math.floor((loadStatus.finishLoad / loadStatus.needToLoad) * 100);</span>
 }
 &nbsp;
 function <span class="fstat-no" title="function not covered" >isLoading(</span>loadStatus: LoadingInfo): boolean {
@@ -666,6 +679,7 @@ function <span class="fstat-no" title="function not covered" >SpaceCanvas(</span
     };
 <span class="cstat-no" title="statement not covered" >    window.addEventListener('beforeunload', unLoadEventHandler);</span>
 <span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      props.peerManager.close();</span>
 <span class="cstat-no" title="statement not covered" >      window.removeEventListener('resize', resizeEventHandler);</span>
 <span class="cstat-no" title="statement not covered" >      window.removeEventListener('beforeunload', unLoadEventHandler);</span>
     };
@@ -768,7 +782,11 @@ function <span class="fstat-no" title="function not covered" >SpaceCanvas(</span
         /&gt;
       ) : null}
       {!isLoading(loadStatus) ? (
-        &lt;div id="divLoad"&gt;{getPercentageFromLoadStatus(loadStatus)}&lt;/div&gt;
+        &lt;div id="divLoad"&gt;
+          &lt;SpaceLoading
+            loadingPercentage={getPercentageFromLoadStatus(loadStatus)}
+          &gt;&lt;/SpaceLoading&gt;
+        &lt;/div&gt;
       ) : null}
       &lt;canvas
         width={2400}
@@ -796,7 +814,7 @@ export default SpaceCanvas;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Oct 07 2021 02:40:14 GMT+0000 (Coordinated Universal Time)
+                at Thu Oct 07 2021 03:10:00 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
