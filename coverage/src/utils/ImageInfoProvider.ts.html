@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28.78% </span>
+                <span class="strong">29.63% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>40/139</span>
+                <span class='fraction'>40/135</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">9.52% </span>
+                <span class="strong">11.76% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/21</span>
+                <span class='fraction'>2/17</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">31.25% </span>
+                <span class="strong">32.26% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>40/128</span>
+                <span class='fraction'>40/124</span>
             </div>
         
             
@@ -405,16 +405,7 @@
 <a name='L346'></a><a href='#L346'>346</a>
 <a name='L347'></a><a href='#L347'>347</a>
 <a name='L348'></a><a href='#L348'>348</a>
-<a name='L349'></a><a href='#L349'>349</a>
-<a name='L350'></a><a href='#L350'>350</a>
-<a name='L351'></a><a href='#L351'>351</a>
-<a name='L352'></a><a href='#L352'>352</a>
-<a name='L353'></a><a href='#L353'>353</a>
-<a name='L354'></a><a href='#L354'>354</a>
-<a name='L355'></a><a href='#L355'>355</a>
-<a name='L356'></a><a href='#L356'>356</a>
-<a name='L357'></a><a href='#L357'>357</a>
-<a name='L358'></a><a href='#L358'>358</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L349'></a><a href='#L349'>349</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -458,6 +449,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
@@ -653,16 +645,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -776,7 +758,6 @@ import IdProvider from './IdProvider';
 import {
   ImageInfo,
   AvatarImageEnum,
-  LayerLevelEnum,
   AvatarPartImageEnum,
   PixelData,
   ImageMDInfo,
@@ -800,7 +781,8 @@ interface ReadyToLoadValue {
 &nbsp;
 class ImageInfoProvider {
   background: ImageInfo | null;
-  objects: Map&lt;LayerLevelEnum, Map&lt;number, ImageInfo&gt;&gt;; // objects[LayerLevelEnum][ImageInfoID]
+  // objects: Map&lt;LayerLevelEnum, Map&lt;number, ImageInfo&gt;&gt;; // objects[LayerLevelEnum][ImageInfoID]
+  objects: ImageInfo[];
   pixelInfos: PixelData[][];
   avatars: Map&lt;AvatarImageEnum, Map&lt;AvatarPartImageEnum, ImageInfo&gt;&gt;;
   mapMakingInfo: MapMakingInfo;
@@ -815,7 +797,8 @@ class ImageInfoProvider {
     mapMakingInfo: MapMakingInfo,
   ) {
     this.gl = gl;
-    this.objects = new Map();
+    // this.objects = new Map();
+    this.objects = [];
     this.avatars = new Map();
     this.readyToLoad = new Map();
     this.setLoadStatus = setLoadStatus;
@@ -1009,17 +992,7 @@ class ImageInfoProvider {
               centerPosPixelOffset: baseImageInfo.centerPosPixelOffset,
               size: baseImageInfo.size,
             };
-<span class="cstat-no" title="statement not covered" >            if (!this.objects.has(imageMdInfo.layerLev))</span>
-<span class="cstat-no" title="statement not covered" >              this.objects.set(</span>
-                imageMdInfo.layerLev,
-                new Map&lt;number, ImageInfo&gt;(),
-              );
-&nbsp;
-            const layerLevel = <span class="cstat-no" title="statement not covered" >this.objects.get(imageMdInfo.layerLev);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >            if (layerLevel !== undefined) {</span>
-<span class="cstat-no" title="statement not covered" >              layerLevel.set(readyToLoadValue.id, imageInfo);</span>
-            }
+<span class="cstat-no" title="statement not covered" >            this.objects.push(imageInfo);</span>
 &nbsp;
             const x_init = <span class="cstat-no" title="statement not covered" >imageInfo.centerPos.x - imageInfo.size.width / 2;</span>
             const x_limit = <span class="cstat-no" title="statement not covered" >imageInfo.centerPos.x + imageInfo.size.width / 2;</span>
@@ -1081,20 +1054,20 @@ class ImageInfoProvider {
 <span class="cstat-no" title="statement not covered" >    this.insertLoadingQueue(smallTreeMD, {x: 1600, y: 800});</span>
 <span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; 15; i++) {</span>
 <span class="cstat-no" title="statement not covered" >      this.insertLoadingQueue(grayBlockMD, {</span>
-        x: 800 + i * grayBlockMD.collisionMDInfos[0].size.width,
+        x: 800 + i * 72, // grayBlockMD.collisionMDInfos[0].size.width,
         y: 500,
       });
     }
 <span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; 15; i++) {</span>
 <span class="cstat-no" title="statement not covered" >      this.insertLoadingQueue(grayBlockMD, {</span>
-        x: 800 + i * grayBlockMD.collisionMDInfos[0].size.width,
+        x: 800 + i * 72, // grayBlockMD.collisionMDInfos[0].size.width,
         y: 1450,
       });
     }
 <span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; 11; i++) {</span>
 <span class="cstat-no" title="statement not covered" >      this.insertLoadingQueue(grayBlockMD, {</span>
-        x: 800 + 14 * grayBlockMD.collisionMDInfos[0].size.width,
-        y: 500 + i * grayBlockMD.collisionMDInfos[0].size.height,
+        x: 800 + 14 * 72, // grayBlockMD.collisionMDInfos[0].size.width,
+        y: 500 + i * 72, // grayBlockMD.collisionMDInfos[0].size.height,
       });
     }
 <span class="cstat-no" title="statement not covered" >    this.insertLoadingQueue(greenGrassMD, {x: 900, y: 900});</span>
@@ -1135,7 +1108,7 @@ export default ImageInfoProvider;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 12 2021 01:21:54 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 12 2021 02:28:25 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

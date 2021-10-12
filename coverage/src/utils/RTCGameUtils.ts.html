@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.72% </span>
+                <span class="strong">7.67% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>23/298</span>
+                <span class='fraction'>23/300</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">5.49% </span>
+                <span class="strong">5.26% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/91</span>
+                <span class='fraction'>5/95</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.9% </span>
+                <span class="strong">7.85% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>23/291</span>
+                <span class='fraction'>23/293</span>
             </div>
         
             
@@ -909,7 +909,20 @@
 <a name='L850'></a><a href='#L850'>850</a>
 <a name='L851'></a><a href='#L851'>851</a>
 <a name='L852'></a><a href='#L852'>852</a>
-<a name='L853'></a><a href='#L853'>853</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L853'></a><a href='#L853'>853</a>
+<a name='L854'></a><a href='#L854'>854</a>
+<a name='L855'></a><a href='#L855'>855</a>
+<a name='L856'></a><a href='#L856'>856</a>
+<a name='L857'></a><a href='#L857'>857</a>
+<a name='L858'></a><a href='#L858'>858</a>
+<a name='L859'></a><a href='#L859'>859</a>
+<a name='L860'></a><a href='#L860'>860</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1214,8 +1227,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1246,7 +1259,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1266,8 +1278,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1778,6 +1792,12 @@ export enum DataDtoType {
   SHARED_SCREEN_DRAW_START,
 }
 &nbsp;
+enum CollisionDirection {
+  NO_COLLISION,
+  HORIZONTAL,
+  VERTICAL,
+}
+&nbsp;
 /**
  * peerConnection 의 dataChannel 을 통해서 Data 를 전송할때 규약
  */
@@ -2050,9 +2070,9 @@ export class Me implements PlayerDto {
     };
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pr</span>ivate isCollision(glHelper: GLHelper): boolean {
-    const vertex4: Vec2[] = <span class="cstat-no" title="statement not covered" >glHelper.getMy4VertexWorldPosition(this, 0.8);</span>
-<span class="cstat-no" title="statement not covered" >    if (!glHelper.imageInfoProvider.pixelInfos) <span class="cstat-no" title="statement not covered" >return false;</span></span>
+<span class="fstat-no" title="function not covered" >  pr</span>ivate isCollision(glHelper: GLHelper): number {
+    const vertex4: Vec2[] = <span class="cstat-no" title="statement not covered" >glHelper.getMy4VertexWorldPosition(this, 1);</span>
+<span class="cstat-no" title="statement not covered" >    if (!glHelper.imageInfoProvider.pixelInfos) <span class="cstat-no" title="statement not covered" >return 0;</span></span>
 <span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; vertex4.length; i++) {</span>
       let left = <span class="cstat-no" title="statement not covered" >vertex4[i];</span>
       let right = <span class="cstat-no" title="statement not covered" >i &lt; vertex4.length - 1 ? vertex4[i + 1] : vertex4[0];</span>
@@ -2065,19 +2085,19 @@ export class Me implements PlayerDto {
 <span class="cstat-no" title="statement not covered" >      for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; right.x - left.x; i++) {</span>
         const posX = <span class="cstat-no" title="statement not covered" >Math.round(left.x + i);</span>
         const posY = <span class="cstat-no" title="statement not covered" >Math.round(left.y + a * i);</span>
-<span class="cstat-no" title="statement not covered" >        if (</span>
-          posX &lt; 0 ||
-          posX &gt;= glHelper.imageInfoProvider.pixelInfos.length ||
+<span class="cstat-no" title="statement not covered" >        if (posX &lt; 0 || posX &gt;= glHelper.imageInfoProvider.pixelInfos.length) {</span>
+<span class="cstat-no" title="statement not covered" >          return CollisionDirection.HORIZONTAL;</span>
+        } else <span class="cstat-no" title="statement not covered" >if (</span>
           posY &lt; 0 ||
           posY &gt;= glHelper.imageInfoProvider.pixelInfos[0].length ||
           glHelper.imageInfoProvider.pixelInfos[posX][posY].collisionInfoKey !==
             0
         ) {
-<span class="cstat-no" title="statement not covered" >          return true;</span>
+<span class="cstat-no" title="statement not covered" >          return CollisionDirection.VERTICAL;</span>
         }
       }
     }
-<span class="cstat-no" title="statement not covered" >    return false;</span>
+<span class="cstat-no" title="statement not covered" >    return 0;</span>
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  se</span>tAnalyser(analyser: AudioAnalyser): void {
@@ -2098,7 +2118,6 @@ export class Me implements PlayerDto {
       const oldCenterPosY = <span class="cstat-no" title="statement not covered" >this.centerPos.y;</span>
       const oldnormalizedDirectionVectorX = <span class="cstat-no" title="statement not covered" >this.normalizedDirectionVector.x;</span>
       const oldnormalizedDirectionVectorY = <span class="cstat-no" title="statement not covered" >this.normalizedDirectionVector.y;</span>
-      const oldpartRotatedegree = <span class="cstat-no" title="statement not covered" >this.partRotatedegree;</span>
 &nbsp;
       // position value update
 <span class="cstat-no" title="statement not covered" >      this.normalizedDirectionVector = {...this.nextNormalizedDirectionVector};</span>
@@ -2117,14 +2136,16 @@ export class Me implements PlayerDto {
 <span class="cstat-no" title="statement not covered" >        this.rotateCounterclockwise = false;</span>
       }
 <span class="cstat-no" title="statement not covered" >      this.lookLeft = this.centerPos.x &lt; oldCenterPosX ? true : false;</span>
+&nbsp;
       //collision detection part
-<span class="cstat-no" title="statement not covered" >      if (this.isCollision(glHelper)) {</span>
-        // if isCollision -&gt; rollback value
+      // if isCollision -&gt; rollback value
+      const isCollisionDetected = <span class="cstat-no" title="statement not covered" >this.isCollision(glHelper);</span>
+<span class="cstat-no" title="statement not covered" >      if (isCollisionDetected === CollisionDirection.HORIZONTAL) {</span>
 <span class="cstat-no" title="statement not covered" >        this.centerPos.x = oldCenterPosX;</span>
-<span class="cstat-no" title="statement not covered" >        this.centerPos.y = oldCenterPosY;</span>
 <span class="cstat-no" title="statement not covered" >        this.normalizedDirectionVector.x = oldnormalizedDirectionVectorX;</span>
+      } else <span class="cstat-no" title="statement not covered" >if (isCollisionDetected === CollisionDirection.VERTICAL) {</span>
+<span class="cstat-no" title="statement not covered" >        this.centerPos.y = oldCenterPosY;</span>
 <span class="cstat-no" title="statement not covered" >        this.normalizedDirectionVector.y = oldnormalizedDirectionVectorY;</span>
-<span class="cstat-no" title="statement not covered" >        this.partRotatedegree = oldpartRotatedegree;</span>
       }
     }
   }
@@ -2620,7 +2641,7 @@ export default class PeerManager {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 12 2021 01:21:54 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 12 2021 02:28:25 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/102</span>
+                <span class='fraction'>0/106</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/43</span>
+                <span class='fraction'>0/45</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>0/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/95</span>
+                <span class='fraction'>0/99</span>
             </div>
         
             
@@ -319,7 +319,15 @@
 <a name='L260'></a><a href='#L260'>260</a>
 <a name='L261'></a><a href='#L261'>261</a>
 <a name='L262'></a><a href='#L262'>262</a>
-<a name='L263'></a><a href='#L263'>263</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -411,6 +419,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -517,13 +526,20 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -583,7 +599,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {useRef, useState, useEffect} from 'react';
 import ImageInfoProvider from '../utils/ImageInfoProvider';
-import {MapMakingInfo} from '../utils/ImageMetaData';
+import {MapMakingInfo, BodySize} from '../utils/ImageMetaData';
 import PeerManager, {
   DataDto,
   DataDtoType,
@@ -669,13 +685,14 @@ function <span class="fstat-no" title="function not covered" >SpaceCanvas(</span
 &nbsp;
   const requestAnimation = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    if (gLHelperRef.current) {</span>
+      const LegSize = <span class="cstat-no" title="statement not covered" >BodySize.armLegSize.y / 2 + BodySize.armOffsetY;</span>
       const gLHelper = <span class="cstat-no" title="statement not covered" >gLHelperRef.current;</span>
       const peerManager = <span class="cstat-no" title="statement not covered" >props.peerManager;</span>
 <span class="cstat-no" title="statement not covered" >      gLHelper.camera.updateCenterPosFromPlayer(peerManager.me);</span>
 <span class="cstat-no" title="statement not covered" >      peerManager.me.update(gLHelper);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      drawBackgroundFromBuffer();</span>
-<span class="cstat-no" title="statement not covered" >      gLHelper.drawObjectsBeforeAvatar();</span>
+<span class="cstat-no" title="statement not covered" >      gLHelper.resetAllDrawThings();</span>
       const data: DataDto = <span class="cstat-no" title="statement not covered" >{</span>
         type: DataDtoType.PLAYER_INFO,
         data: peerManager.me.getPlayerDto(),
@@ -683,15 +700,15 @@ function <span class="fstat-no" title="function not covered" >SpaceCanvas(</span
       const transData = <span class="cstat-no" title="statement not covered" >JSON.stringify(data);</span>
 <span class="cstat-no" title="statement not covered" >      peerManager.forEachPeer(<span class="fstat-no" title="function not covered" >pe</span>er =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        peer.transmitUsingDataChannel(transData);</span>
-<span class="cstat-no" title="statement not covered" >        gLHelper.drawAvatar(peer, peer.nicknameDiv, peer.textMessageDiv);</span>
+<span class="cstat-no" title="statement not covered" >        gLHelper.pushToDrawThings(2, peer.centerPos.y + LegSize, peer);</span>
 <span class="cstat-no" title="statement not covered" >        peer.updateSoundFromVec2(peerManager.me.centerPos);</span>
       });
-<span class="cstat-no" title="statement not covered" >      gLHelper.drawAvatar(</span>
+<span class="cstat-no" title="statement not covered" >      gLHelper.pushToDrawThings(</span>
+        2,
+        peerManager.me.centerPos.y + LegSize,
         peerManager.me,
-        peerManager.me.nicknameDiv,
-        peerManager.me.textMessageDiv,
       );
-<span class="cstat-no" title="statement not covered" >      gLHelper.drawObjectsAfterAvatar(peerManager.me.centerPos);</span>
+<span class="cstat-no" title="statement not covered" >      gLHelper.drawAll(peerManager.me.centerPos);</span>
 <span class="cstat-no" title="statement not covered" >      setAniNumber(requestAnimationFrame(requestAnimation));</span>
     }
   };
@@ -787,7 +804,14 @@ function <span class="fstat-no" title="function not covered" >SpaceCanvas(</span
 <span class="cstat-no" title="statement not covered" >    if (!isLoading(loadStatus) || !gLHelperRef.current) {</span>
 <span class="cstat-no" title="statement not covered" >      return;</span>
     }
-    //화면에 장면을 그려줌
+<span class="cstat-no" title="statement not covered" >    gLHelperRef.current.imageInfoProvider.objects.forEach(<span class="fstat-no" title="function not covered" >ob</span>ject =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (gLHelperRef.current)</span>
+<span class="cstat-no" title="statement not covered" >        gLHelperRef.current.pushToDrawThings(</span>
+          1,
+          object.centerPos.y + object.size.height / 2,
+          object,
+        );
+    });
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    setAniNumber(requestAnimationFrame(requestAnimation));</span>
 <span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
@@ -850,7 +874,7 @@ export default SpaceCanvas;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 12 2021 01:21:54 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 12 2021 02:28:25 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

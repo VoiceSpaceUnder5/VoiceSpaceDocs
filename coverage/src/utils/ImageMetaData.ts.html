@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">81.82% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/11</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">81.82% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/11</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
@@ -413,7 +413,8 @@
 <a name='L354'></a><a href='#L354'>354</a>
 <a name='L355'></a><a href='#L355'>355</a>
 <a name='L356'></a><a href='#L356'>356</a>
-<a name='L357'></a><a href='#L357'>357</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -498,6 +499,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -577,28 +583,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -625,6 +609,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -858,6 +860,11 @@ export interface ObjectImageMD {
   collisionMDInfos: CollisionMDInfo[];
 }
 &nbsp;
+export const BodySize = {
+  armLegSize: {x: 11, y: 28},
+  armOffsetY: 47,
+};
+&nbsp;
 /**
  * ## 몸통, 얼굴 Y축 offset 계산법
  * 피그마 디자인 길이 참조
@@ -933,49 +940,44 @@ export const seaAndMountainVer2MD: ObjectImageMD = {
 };
 &nbsp;
 // bigTree unionSize = 352 x 440 (x4 ratio)
+// Top: 258 * 324
+// Leaf: 258 * 264
+// Stem: 62.5 * 168
 export const bigTreeMD: ObjectImageMD = {
   imageMDInfos: [
     {
       src: './assets/spaceMain/object/bigTreeTop.png',
-      centerPosPixelOffset: {x: 0, y: -(440 / 2 - 324 / 2)},
+      // centerPosPixelOffset: {x: 0, y: -(440 / 2 - 324 / 2)},
+      centerPosPixelOffset: {x: 0, y: 0},
       layerLev: LayerLevelEnum.OBSTACLE_AFTER_AVATAR_ZERO, // 동물 친구들 이후로 그려지는 것들중 가장 먼저 그려짐.
-    },
-    {
-      src: './assets/spaceMain/object/bigTreeBottom.png',
-      centerPosPixelOffset: {x: 0, y: +(440 / 2 - 240 / 2)},
-      layerLev: LayerLevelEnum.OBSTACLE_BEFORE_AVATAR_ONE,
     },
   ],
   collisionMDInfos: [
     {
       collisionType: ObjectCollisionFigureEnum.FILLED_ELLIPSE,
-      centerPosPixelOffset: {x: 0, y: 100},
-      size: {width: 160, height: 128},
+      centerPosPixelOffset: {x: 0, y: 162 - 22},
+      size: {width: 90, height: 8},
     },
   ],
 };
 &nbsp;
 // smallTree unionSize = 264 * 300 (x3 ratio)
-// top :146 * 210
-// bottom:264 * 180
+// top : 146 * 210
+// leaf: 144 * 144
+// bottom: 10 * 44
 export const smallTreeMD: ObjectImageMD = {
   imageMDInfos: [
     {
       src: './assets/spaceMain/object/smallTreeTop.png',
-      centerPosPixelOffset: {x: 0, y: -(300 / 2 - 210 / 2)},
+      centerPosPixelOffset: {x: 0, y: 0},
       layerLev: LayerLevelEnum.OBSTACLE_AFTER_AVATAR_ZERO, // 동물 친구들 이후로 그려지는 것들중 가장 먼저 그려짐.
-    },
-    {
-      src: './assets/spaceMain/object/smallTreeBottom.png',
-      centerPosPixelOffset: {x: 0, y: +(300 / 2 - 180 / 2)},
-      layerLev: LayerLevelEnum.OBSTACLE_BEFORE_AVATAR_ONE,
     },
   ],
   collisionMDInfos: [
     {
       collisionType: ObjectCollisionFigureEnum.FILLED_ELLIPSE,
-      centerPosPixelOffset: {x: 0, y: 60},
-      size: {width: 120, height: 84},
+      centerPosPixelOffset: {x: 0, y: 105 - 22},
+      size: {width: 40, height: 8},
     },
   ],
 };
@@ -991,6 +993,7 @@ export const greenGrassMD: ObjectImageMD = {
   collisionMDInfos: [],
 };
 &nbsp;
+// 72 * 72
 export const grayBlockMD: ObjectImageMD = {
   imageMDInfos: [
     {
@@ -1002,8 +1005,8 @@ export const grayBlockMD: ObjectImageMD = {
   collisionMDInfos: [
     {
       collisionType: ObjectCollisionFigureEnum.FILLED_SQUARE,
-      centerPosPixelOffset: {x: 0, y: 0},
-      size: {width: 72, height: 72},
+      centerPosPixelOffset: {x: 0, y: 36 - 22},
+      size: {width: 92, height: 4},
     },
   ],
 };
@@ -1132,7 +1135,7 @@ export interface Formant {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 12 2021 01:21:54 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 12 2021 02:28:25 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
