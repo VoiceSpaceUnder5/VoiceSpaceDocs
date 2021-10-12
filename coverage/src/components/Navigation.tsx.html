@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/95</span>
+                <span class='fraction'>0/110</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/38</span>
+                <span class='fraction'>0/43</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/94</span>
+                <span class='fraction'>0/109</span>
             </div>
         
             
@@ -372,7 +372,15 @@
 <a name='L313'></a><a href='#L313'>313</a>
 <a name='L314'></a><a href='#L314'>314</a>
 <a name='L315'></a><a href='#L315'>315</a>
-<a name='L316'></a><a href='#L316'>316</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -610,35 +618,43 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -922,6 +938,11 @@ function <span class="fstat-no" title="function not covered" >Navigation(</span>
   // 두 함수 모두 GC 의 타겟이 되지 않습니다. 따라서 두 함수에서 사용하고 있는 peerManager 도
   // GC 의 타겟이 되지 않기 때문에 지속적으로 쌓이게 됩니다. 메모리 문제도 있지만,
   // webGL context 와 audioContext 의 개수 한계가 금방 오게 됩니다.
+  const changeInputStreamEndCatchAudioTrackEnded = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tream: MediaStream) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('합친거');</span>
+<span class="cstat-no" title="statement not covered" >    changeInputStream(stream);</span>
+    // catchAudioTrackEnded(stream);
+  };
   const changeInputStream = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tream: MediaStream): void =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    props.peerManager.forEachPeer(<span class="fstat-no" title="function not covered" >pe</span>er =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      peer.getSenders().forEach(<span class="fstat-no" title="function not covered" >se</span>nder =&gt; {</span>
@@ -936,24 +957,27 @@ function <span class="fstat-no" title="function not covered" >Navigation(</span>
     });
 <span class="cstat-no" title="statement not covered" >    props.peerManager.me.setAnalyser(new AudioAnalyser(stream));</span>
 <span class="cstat-no" title="statement not covered" >    props.peerManager.localStream = stream;</span>
-    //catchAudioTrackEnended(stream);
+<span class="cstat-no" title="statement not covered" >    console.log('1번!');</span>
   };
-  //   const catchAudioTrackEnended = (catchedStream: MediaStream) =&gt; {
-  //     catchedStream.getAudioTracks()[0].onended = () =&gt; {
-  //       console.log('!!!!change localStream!!!!');
-  //       navigator.mediaDevices
-  //         .enumerateDevices()
-  //         .then((deviceInfos: MediaDeviceInfo[]) =&gt; {
-  //           const deviceId = deviceInfos[1].deviceId;
-  //           navigator.mediaDevices
-  //             .getUserMedia({video: false, audio: {deviceId: deviceId}})
-  //             .then(stream =&gt; {
-  //               changeInputStream(stream);
-  //             });
-  //         });
-  //     };
-  //   };
-  //   catchAudioTrackEnended(props.peerManager.localStream);
+  const catchAudioTrackEnded = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(c</span>atchedStream: MediaStream) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('2번 시작');</span>
+<span class="cstat-no" title="statement not covered" >    catchedStream.getAudioTracks()[0].onended = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('!!!!change localStream!!!!');</span>
+<span class="cstat-no" title="statement not covered" >      navigator.mediaDevices</span>
+        .enumerateDevices()
+        .then(<span class="fstat-no" title="function not covered" >(d</span>eviceInfos: MediaDeviceInfo[]) =&gt; {
+          const deviceId = <span class="cstat-no" title="statement not covered" >deviceInfos[1].deviceId;</span>
+<span class="cstat-no" title="statement not covered" >          navigator.mediaDevices</span>
+            .getUserMedia({video: false, audio: {deviceId: deviceId}})
+            .then(<span class="fstat-no" title="function not covered" >st</span>ream =&gt; {
+<span class="cstat-no" title="statement not covered" >              console.log('change 다음엔 릐얼 바뀌어야즤');</span>
+<span class="cstat-no" title="statement not covered" >              changeInputStream(stream);</span>
+            });
+        });
+    };
+<span class="cstat-no" title="statement not covered" >    console.log('2번!');</span>
+  };
+<span class="cstat-no" title="statement not covered" >  catchAudioTrackEnded(props.peerManager.localStream);</span>
 <span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;nav className="navbar"&gt;
       &lt;div className="navbar_left"&gt;
@@ -979,7 +1003,7 @@ function <span class="fstat-no" title="function not covered" >Navigation(</span>
         /&gt;
         &lt;Options
           changeEachAudio={changeEachAudio}
-          changeInputStream={changeInputStream}
+          changeInputStream={changeInputStreamEndCatchAudioTrackEnded}
           seletedInputDevice={props.peerManager.micDeviceID}
           seletedOutputDevice={props.peerManager.speakerDeviceID}
         /&gt;
@@ -1009,7 +1033,7 @@ export default Navigation;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 12 2021 02:28:25 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 12 2021 02:29:30 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
