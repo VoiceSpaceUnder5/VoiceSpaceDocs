@@ -89,6 +89,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#AllDrawThings" class="tsd-kind-icon">All<wbr>Draw<wbr>Things</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#applyShapeMatrixLocation" class="tsd-kind-icon">apply<wbr>Shape<wbr>Matrix<wbr>Location</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#applyTransparencyLocation" class="tsd-kind-icon">apply<wbr>Transparency<wbr>Location</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#camera" class="tsd-kind-icon">camera</a></li>
@@ -105,15 +106,17 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#degreeToRadian" class="tsd-kind-icon">degree<wbr>ToRadian</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawAll" class="tsd-kind-icon">draw<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawArray" class="tsd-kind-icon">draw<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawAvatar" class="tsd-kind-icon">draw<wbr>Avatar</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawImage" class="tsd-kind-icon">draw<wbr>Image</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawObjectsAfterAvatar" class="tsd-kind-icon">draw<wbr>Objects<wbr>After<wbr>Avatar</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawObjectsBeforeAvatar" class="tsd-kind-icon">draw<wbr>Objects<wbr>Before<wbr>Avatar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawObject" class="tsd-kind-icon">draw<wbr>Object</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#drawpart" class="tsd-kind-icon">drawpart</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#getMy4VertexWorldPosition" class="tsd-kind-icon">get<wbr>My4<wbr>Vertex<wbr>World<wbr>Position</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#getWorldPositionFromScreenPosition" class="tsd-kind-icon">get<wbr>World<wbr>Position<wbr>From<wbr>Screen<wbr>Position</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#makeAvatarImageInfoFromImageInfoProviderAndPlayer" class="tsd-kind-icon">make<wbr>Avatar<wbr>Image<wbr>Info<wbr>From<wbr>Image<wbr>Info<wbr>Provider<wbr>And<wbr>Player</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#pushToDrawThings" class="tsd-kind-icon">push<wbr>ToDraw<wbr>Things</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#resetAllDrawThings" class="tsd-kind-icon">reset<wbr>All<wbr>Draw<wbr>Things</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#updateCameraMatrix" class="tsd-kind-icon">update<wbr>Camera<wbr>Matrix</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#updateFromCavnas" class="tsd-kind-icon">update<wbr>From<wbr>Cavnas</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="utils_webGLUtils.default.html#updateImageMatrixFromDrawInfo" class="tsd-kind-icon">update<wbr>Image<wbr>Matrix<wbr>From<wbr>Draw<wbr>Info</a></li>
@@ -136,7 +139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L238">src/utils/webGLUtils.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L253">src/utils/webGLUtils.ts:253</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -159,12 +162,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="AllDrawThings" class="tsd-anchor"></a>
+					<h3>All<wbr>Draw<wbr>Things</h3>
+					<div class="tsd-signature tsd-kind-icon">All<wbr>Draw<wbr>Things<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DrawThing</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L251">src/utils/webGLUtils.ts:251</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="applyShapeMatrixLocation" class="tsd-anchor"></a>
 					<h3>apply<wbr>Shape<wbr>Matrix<wbr>Location</h3>
 					<div class="tsd-signature tsd-kind-icon">apply<wbr>Shape<wbr>Matrix<wbr>Location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WebGLUniformLocation</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L224">src/utils/webGLUtils.ts:224</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L236">src/utils/webGLUtils.ts:236</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">apply<wbr>Transparency<wbr>Location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WebGLUniformLocation</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L225">src/utils/webGLUtils.ts:225</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L237">src/utils/webGLUtils.ts:237</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">camera<span class="tsd-signature-symbol">:</span> <a href="utils_webGLUtils.Camera.html" class="tsd-signature-type" data-tsd-kind="Class">Camera</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L226">src/utils/webGLUtils.ts:226</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L238">src/utils/webGLUtils.ts:238</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -194,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">camera<wbr>Matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L234">src/utils/webGLUtils.ts:234</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L246">src/utils/webGLUtils.ts:246</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">div<wbr>Height<wbr>OffsetY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L230">src/utils/webGLUtils.ts:230</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L242">src/utils/webGLUtils.ts:242</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">gl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebGLRenderingContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L223">src/utils/webGLUtils.ts:223</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L235">src/utils/webGLUtils.ts:235</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">image<wbr>Info<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="utils_ImageInfoProvider.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L227">src/utils/webGLUtils.ts:227</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L239">src/utils/webGLUtils.ts:239</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">image<wbr>Matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L235">src/utils/webGLUtils.ts:235</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L247">src/utils/webGLUtils.ts:247</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">projection<wbr>Matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L233">src/utils/webGLUtils.ts:233</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L245">src/utils/webGLUtils.ts:245</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -254,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">transparency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L236">src/utils/webGLUtils.ts:236</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L248">src/utils/webGLUtils.ts:248</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L358">src/utils/webGLUtils.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L377">src/utils/webGLUtils.ts:377</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,6 +298,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="drawAll" class="tsd-anchor"></a>
+					<h3>draw<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">draw<wbr>All<span class="tsd-signature-symbol">(</span>meCenterPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L688">src/utils/webGLUtils.ts:688</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>meCenterPos: <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="drawArray" class="tsd-anchor"></a>
 					<h3>draw<wbr>Array</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -294,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L443">src/utils/webGLUtils.ts:443</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L462">src/utils/webGLUtils.ts:462</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -317,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L516">src/utils/webGLUtils.ts:516</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L535">src/utils/webGLUtils.ts:535</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -346,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L458">src/utils/webGLUtils.ts:458</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L477">src/utils/webGLUtils.ts:477</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -360,41 +396,27 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="drawObjectsAfterAvatar" class="tsd-anchor"></a>
-					<h3>draw<wbr>Objects<wbr>After<wbr>Avatar</h3>
+					<a name="drawObject" class="tsd-anchor"></a>
+					<h3>draw<wbr>Object</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">draw<wbr>Objects<wbr>After<wbr>Avatar<span class="tsd-signature-symbol">(</span>meCenterPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">draw<wbr>Object<span class="tsd-signature-symbol">(</span>imageInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_ImageMetaData.ImageInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImageInfo</a>, meCenterPos<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L674">src/utils/webGLUtils.ts:674</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L672">src/utils/webGLUtils.ts:672</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
+									<h5>imageInfo: <a href="../interfaces/utils_ImageMetaData.ImageInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImageInfo</a></h5>
+								</li>
+								<li>
 									<h5>meCenterPos: <a href="../interfaces/utils_RTCGameUtils.Vec2.html" class="tsd-signature-type" data-tsd-kind="Interface">Vec2</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="drawObjectsBeforeAvatar" class="tsd-anchor"></a>
-					<h3>draw<wbr>Objects<wbr>Before<wbr>Avatar</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">draw<wbr>Objects<wbr>Before<wbr>Avatar<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L653">src/utils/webGLUtils.ts:653</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -409,7 +431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L467">src/utils/webGLUtils.ts:467</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L486">src/utils/webGLUtils.ts:486</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -432,7 +454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L298">src/utils/webGLUtils.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L317">src/utils/webGLUtils.ts:317</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -458,7 +480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L287">src/utils/webGLUtils.ts:287</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L306">src/utils/webGLUtils.ts:306</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -481,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L476">src/utils/webGLUtils.ts:476</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L495">src/utils/webGLUtils.ts:495</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,6 +523,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="pushToDrawThings" class="tsd-anchor"></a>
+					<h3>push<wbr>ToDraw<wbr>Things</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">push<wbr>ToDraw<wbr>Things<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, zIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><a href="../interfaces/utils_ImageMetaData.ImageInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImageInfo</a><span class="tsd-signature-symbol"> | </span><a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a><span class="tsd-signature-symbol"> | </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L706">src/utils/webGLUtils.ts:706</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>zIndex: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <a href="../interfaces/utils_ImageMetaData.ImageInfo.html" class="tsd-signature-type" data-tsd-kind="Interface">ImageInfo</a><span class="tsd-signature-symbol"> | </span><a href="utils_RTCGameUtils.Me.html" class="tsd-signature-type" data-tsd-kind="Class">Me</a><span class="tsd-signature-symbol"> | </span><a href="utils_RTCGameUtils.Peer.html" class="tsd-signature-type" data-tsd-kind="Class">Peer</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="resetAllDrawThings" class="tsd-anchor"></a>
+					<h3>reset<wbr>All<wbr>Draw<wbr>Things</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>All<wbr>Draw<wbr>Things<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L718">src/utils/webGLUtils.ts:718</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updateCameraMatrix" class="tsd-anchor"></a>
 					<h3>update<wbr>Camera<wbr>Matrix</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -510,7 +578,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L343">src/utils/webGLUtils.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L362">src/utils/webGLUtils.ts:362</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -527,7 +595,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L641">src/utils/webGLUtils.ts:641</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L660">src/utils/webGLUtils.ts:660</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -550,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L362">src/utils/webGLUtils.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L381">src/utils/webGLUtils.ts:381</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -573,7 +641,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L336">src/utils/webGLUtils.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L355">src/utils/webGLUtils.ts:355</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -590,7 +658,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/7c87d95/front/src/utils/webGLUtils.ts#L403">src/utils/webGLUtils.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/e78aad6/front/src/utils/webGLUtils.ts#L422">src/utils/webGLUtils.ts:422</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,6 +686,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/utils_webGLUtils.drawDataType.html" class="tsd-kind-icon">draw<wbr>Data<wbr>Type</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="utils_webGLUtils.Camera.html" class="tsd-kind-icon">Camera</a>
 					</li>
@@ -628,6 +699,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="utils_webGLUtils.default.html#AllDrawThings" class="tsd-kind-icon">All<wbr>Draw<wbr>Things</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#applyShapeMatrixLocation" class="tsd-kind-icon">apply<wbr>Shape<wbr>Matrix<wbr>Location</a>
@@ -663,6 +737,9 @@
 								<a href="utils_webGLUtils.default.html#degreeToRadian" class="tsd-kind-icon">degree<wbr>ToRadian</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_webGLUtils.default.html#drawAll" class="tsd-kind-icon">draw<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#drawArray" class="tsd-kind-icon">draw<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -672,10 +749,7 @@
 								<a href="utils_webGLUtils.default.html#drawImage" class="tsd-kind-icon">draw<wbr>Image</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="utils_webGLUtils.default.html#drawObjectsAfterAvatar" class="tsd-kind-icon">draw<wbr>Objects<wbr>After<wbr>Avatar</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="utils_webGLUtils.default.html#drawObjectsBeforeAvatar" class="tsd-kind-icon">draw<wbr>Objects<wbr>Before<wbr>Avatar</a>
+								<a href="utils_webGLUtils.default.html#drawObject" class="tsd-kind-icon">draw<wbr>Object</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#drawpart" class="tsd-kind-icon">drawpart</a>
@@ -688,6 +762,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#makeAvatarImageInfoFromImageInfoProviderAndPlayer" class="tsd-kind-icon">make<wbr>Avatar<wbr>Image<wbr>Info<wbr>From<wbr>Image<wbr>Info<wbr>Provider<wbr>And<wbr>Player</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_webGLUtils.default.html#pushToDrawThings" class="tsd-kind-icon">push<wbr>ToDraw<wbr>Things</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="utils_webGLUtils.default.html#resetAllDrawThings" class="tsd-kind-icon">reset<wbr>All<wbr>Draw<wbr>Things</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="utils_webGLUtils.default.html#updateCameraMatrix" class="tsd-kind-icon">update<wbr>Camera<wbr>Matrix</a>
