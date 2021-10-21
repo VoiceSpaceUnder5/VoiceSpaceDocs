@@ -158,7 +158,13 @@
 <a name='L99'></a><a href='#L99'>99</a>
 <a name='L100'></a><a href='#L100'>100</a>
 <a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -225,33 +231,39 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -325,10 +337,12 @@ export class YoutubeStuff extends Stuff implements IInteractStuff {
 <span class="cstat-no" title="statement not covered" >    this.youtubeContainerTopPosition = data.youtubeContainerTopPosition;</span>
 <span class="cstat-no" title="statement not covered" >    this.youtubeContainer = null;</span>
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  in</span>teract(target: DisplayObject): void {
 <span class="cstat-no" title="statement not covered" >    if (this.isReadyToInteract(target)) <span class="cstat-no" title="statement not covered" >this.interactStart();</span></span>
     else <span class="cstat-no" title="statement not covered" >this.interactEnd();</span>
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  in</span>teractStart(): void {
 <span class="cstat-no" title="statement not covered" >    if (!this.youtubeContainer) {</span>
 <span class="cstat-no" title="statement not covered" >      this.youtubeContainer = YoutubeEmbedRenderer.render({</span>
@@ -338,15 +352,18 @@ export class YoutubeStuff extends Stuff implements IInteractStuff {
       });
     }
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  in</span>teractEnd(): void {
 <span class="cstat-no" title="statement not covered" >    if (this.youtubeContainer) {</span>
 <span class="cstat-no" title="statement not covered" >      YoutubeEmbedRenderer.delete(this.youtubeContainer);</span>
 <span class="cstat-no" title="statement not covered" >      this.youtubeContainer = null;</span>
     }
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  is</span>ReadyToInteract(target: DisplayObject): boolean {
 <span class="cstat-no" title="statement not covered" >    return checkIntersect(target, this.interactBox as DisplayObject);</span>
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  ch</span>angeAlpha(): void {
 <span class="cstat-no" title="statement not covered" >    if (this.world.player &amp;&amp; this.world.player.collisionBox) {</span>
 <span class="cstat-no" title="statement not covered" >      if (checkIntersect(this.world.player.collisionBox, this.children[0])) {</span>
@@ -354,6 +371,7 @@ export class YoutubeStuff extends Stuff implements IInteractStuff {
       } else <span class="cstat-no" title="statement not covered" >this.alpha = 1;</span>
     } else <span class="cstat-no" title="statement not covered" >this.alpha = 1;</span>
   }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  up</span>date(): void {
 <span class="cstat-no" title="statement not covered" >    if (this.alphaChangable) <span class="cstat-no" title="statement not covered" >this.changeAlpha();</span></span>
 <span class="cstat-no" title="statement not covered" >    if (this.world.player &amp;&amp; this.world.player.collisionBox)</span>
@@ -367,7 +385,7 @@ export class YoutubeStuff extends Stuff implements IInteractStuff {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Oct 21 2021 09:47:30 GMT+0000 (Coordinated Universal Time)
+                at Thu Oct 21 2021 11:08:23 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>
