@@ -30,16 +30,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -117,7 +117,38 @@
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -127,21 +158,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -180,8 +196,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {MyAvatar} from './MyAvatar';
 import {keyboard} from './Keyboard';
 import {Key} from './Key';
-&nbsp;
-const SPEED = <span class="cstat-no" title="statement not covered" >8;</span>
+import {PLAYER_SPEED} from './metaData/DataInterface';
 &nbsp;
 export class PlayerKeyboard {
   public left: Key;
@@ -204,36 +219,45 @@ export class PlayerKeyboard {
 <span class="cstat-no" title="statement not covered" >    this.initialize(player);</span>
   }
 &nbsp;
+<span class="fstat-no" title="function not covered" >  pu</span>blic get keyDown(): boolean {
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      this.left.isDown ||
+      this.right.isDown ||
+      this.up.isDown ||
+      this.down.isDown
+    );
+  }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  pr</span>ivate initialize(player: MyAvatar) {
 <span class="cstat-no" title="statement not covered" >    this.left.press = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vx -= SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vx -= PLAYER_SPEED;</span>
 <span class="cstat-no" title="statement not covered" >      player.scale.x = -1;</span>
     };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.left.release = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vx += SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vx += PLAYER_SPEED;</span>
     };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.up.press = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vy -= SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vy -= PLAYER_SPEED;</span>
     };
 <span class="cstat-no" title="statement not covered" >    this.up.release = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vy += SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vy += PLAYER_SPEED;</span>
     };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.right.press = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vx += SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vx += PLAYER_SPEED;</span>
 <span class="cstat-no" title="statement not covered" >      player.scale.x = 1;</span>
     };
 <span class="cstat-no" title="statement not covered" >    this.right.release = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vx -= SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vx -= PLAYER_SPEED;</span>
     };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    this.down.press = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vy += SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vy += PLAYER_SPEED;</span>
     };
 <span class="cstat-no" title="statement not covered" >    this.down.release = <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      player.vy -= SPEED;</span>
+<span class="cstat-no" title="statement not covered" >      player.vy -= PLAYER_SPEED;</span>
     };
   }
 }
@@ -244,7 +268,7 @@ export class PlayerKeyboard {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Oct 21 2021 03:54:57 GMT+0000 (Coordinated Universal Time)
+                at Thu Oct 21 2021 03:59:35 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>
