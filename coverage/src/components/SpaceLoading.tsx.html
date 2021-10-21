@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
@@ -122,11 +122,7 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -158,16 +154,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -195,7 +181,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {useEffect, useRef} from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, {useEffect} from 'react';
 import {Progress} from 'antd';
 import './spaceLoading.css';
 &nbsp;
@@ -222,18 +214,8 @@ class LoadingMessageProvider {
 }
 &nbsp;
 function <span class="fstat-no" title="function not covered" >SpaceLoading(</span>props: SpaceLoadingProps): JSX.Element {
-  const loadingImgRef = <span class="cstat-no" title="statement not covered" >useRef&lt;HTMLImageElement&gt;(null);</span>
   const progressBarWidth = <span class="cstat-no" title="statement not covered" >230;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    if (loadingImgRef.current) {</span>
-      const img = <span class="cstat-no" title="statement not covered" >loadingImgRef.current;</span>
-      const leftShiftValue =
-<span class="cstat-no" title="statement not covered" >        (progressBarWidth / 100) * props.loadingPercentage -</span>
-        (progressBarWidth / 2 + img.width / 2);
-<span class="cstat-no" title="statement not covered" >      img.style.left = `calc(50% + ${leftShiftValue}px`;</span>
-    }
-  }, [props.loadingPercentage]);
+  const birdImgWidth = <span class="cstat-no" title="statement not covered" >50;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    LoadingMessageProvider.shuffleMessage();</span>
@@ -249,7 +231,13 @@ function <span class="fstat-no" title="function not covered" >SpaceLoading(</spa
         {props.message ? props.message : LoadingMessageProvider.message}
       &lt;/div&gt;
       &lt;img
-        ref={loadingImgRef}
+        style={{
+          left: `calc(50% + ${
+            (progressBarWidth / 100) * props.loadingPercentage -
+            (progressBarWidth / 2 + birdImgWidth / 2)
+          }px`,
+          width: birdImgWidth,
+        }}
         className="loadingImg"
         src="./assets/spaceMain/loading/forestBird.png"
       &gt;&lt;/img&gt;
@@ -271,7 +259,7 @@ export default SpaceLoading;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Oct 21 2021 03:59:35 GMT+0000 (Coordinated Universal Time)
+                at Thu Oct 21 2021 04:35:07 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
