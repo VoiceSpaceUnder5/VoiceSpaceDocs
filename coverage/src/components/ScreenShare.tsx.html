@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">81.15% </span>
+                <span class="strong">81.05% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>155/191</span>
+                <span class='fraction'>154/190</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.13% </span>
+                <span class="strong">66.12% </span>
                 <span class="quiet">Branches</span>
                 <span class='fraction'>41/62</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">84% </span>
+                <span class="strong">83.67% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>42/50</span>
+                <span class='fraction'>41/49</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.24% </span>
+                <span class="strong">83.15% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>154/185</span>
+                <span class='fraction'>153/184</span>
             </div>
         
             
@@ -730,7 +730,8 @@
 <a name='L671'></a><a href='#L671'>671</a>
 <a name='L672'></a><a href='#L672'>672</a>
 <a name='L673'></a><a href='#L673'>673</a>
-<a name='L674'></a><a href='#L674'>674</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L674'></a><a href='#L674'>674</a>
+<a name='L675'></a><a href='#L675'>675</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1394,7 +1395,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1483,7 +1485,7 @@ export class DrawHelper {
     this.drawStartPositions.set(socketID, {...pos});
   }
   clear(): void {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.canvas &amp;&amp; this.context)
+    if (this.canvas &amp;&amp; this.context)
       this.context?.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
   drawLineAndSaveStartPos(
@@ -1571,7 +1573,7 @@ function ScreenViewer(props: ScreenViewerProps): JSX.Element {
   const width = originVideoHeight * aspectRatio;
 &nbsp;
   useEffect(() =&gt; {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (videoRef.current) {
+    if (videoRef.current) {
       videoRef.current.srcObject = props.stream;
     }
   }, []);
@@ -1598,11 +1600,11 @@ function ScreenViewer(props: ScreenViewerProps): JSX.Element {
   }, [isDrawOn, isPopupVisible]);
 &nbsp;
   const drawToogleChagne: SwitchChangeEventHandler = (checked: boolean) =&gt; {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (canvasRef.current) {
+    if (canvasRef.current) {
       const canvas = canvasRef.current;
-      <span class="missing-if-branch" title="else path not taken" >E</span>if (checked)
+      if (checked)
         canvas.style.cursor = 'url(./assets/navigation/pencil.png) 4 20, auto';
-      else <span class="cstat-no" title="statement not covered" >canvas.style.cursor = 'move';</span>
+      else <span class="cstat-no" title="statement not covered" ><span class="missing-if-branch" title="else path not taken" >E</span>canvas.style.cursor = 'move';</span>
     }
     setIsDrawOn(checked);
   };
@@ -1921,7 +1923,7 @@ function ScreenShare(props: ScreenShareProps): JSX.Element {
             },
           ];
       });
-    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (event.track.kind === 'video') {
+    } else if (event.track.kind === 'video') {
       setScreenShareDatas(before =&gt; {
         const stream = new MediaStream();
         stream.addTrack(event.track);
@@ -1965,7 +1967,7 @@ function ScreenShare(props: ScreenShareProps): JSX.Element {
           const screenShareData = screenDatas.find(ssd =&gt; {
             return ssd.peerId === data.toSocketID;
           });
-          <span class="missing-if-branch" title="else path not taken" >E</span>if (screenShareData) {
+          if (screenShareData) {
             screenShareData.drawHelper.setDrawStartPos(
               data.startPos,
               data.fromSocketID,
@@ -1982,7 +1984,7 @@ function ScreenShare(props: ScreenShareProps): JSX.Element {
           const screenShareData = screenDatas.find(ssd =&gt; {
             return ssd.peerId === data.toSocketID;
           });
-          <span class="missing-if-branch" title="else path not taken" >E</span>if (screenShareData) {
+          if (screenShareData) {
             screenShareData.drawHelper.drawLineAndSaveStartPos(
               data.toPos,
               data.strokeColor,
@@ -1999,7 +2001,7 @@ function ScreenShare(props: ScreenShareProps): JSX.Element {
         const screenShareData = screenDatas.find(ssd =&gt; {
           return ssd.peerId === data.toSocketID;
         });
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (screenShareData) {
+        if (screenShareData) {
           screenShareData.drawHelper.clear();
         }
         return screenDatas;
@@ -2062,12 +2064,13 @@ function ScreenShare(props: ScreenShareProps): JSX.Element {
         })}
       &lt;/div&gt;
       &lt;Dropdown
+        placement={'topCenter'}
         overlay={screenshare}
         trigger={['click']}
         visible={isVisible}
         onVisibleChange={setIsVisible}
       &gt;
-        &lt;a className="ant-dropdown-link" onClick={e =&gt; e.preventDefault()}&gt;
+        &lt;a&gt;
           &lt;DesktopOutlined className="navbar_button" /&gt;
         &lt;/a&gt;
       &lt;/Dropdown&gt;
@@ -2083,7 +2086,7 @@ export default ScreenShare;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Oct 21 2021 09:21:36 GMT+0000 (Coordinated Universal Time)
+                at Thu Oct 21 2021 09:36:35 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
