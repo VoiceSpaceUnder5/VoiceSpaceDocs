@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/utils/pixiUtils/Avatar.ts</title>
+    <title>Code coverage report for src/utils/pixiUtils/Joystick.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,27 +19,27 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/utils/pixiUtils</a> Avatar.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/utils/pixiUtils</a> Joystick.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/34</span>
+                <span class='fraction'>0/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>0/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
@@ -146,20 +146,8 @@
 <a name='L87'></a><a href='#L87'>87</a>
 <a name='L88'></a><a href='#L88'>88</a>
 <a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -178,7 +166,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -197,31 +184,21 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -235,93 +212,119 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {Sprite} from '@pixi/sprite';
-import {Viewport} from 'pixi-viewport';
-import {
-  AvatarImageEnum,
-  AvatarFaceEnum,
-  avatarImageMDs,
-} from './metaData/ImageMetaData';
-import {DisplayContainer} from './DisplayContainer';
-import {AvatarData, DisplayContainerData} from './metaData/DataInterface';
-import {ResourceManager} from './ResourceManager';
-import {World} from './World';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {Container} from '@pixi/display';
+import {Graphics} from '@pixi/graphics';
+import {Vec2} from '../RTCGameUtils';
 &nbsp;
-const avatarMDs = <span class="cstat-no" title="statement not covered" >require('./metaData/avatars.json');</span>
-&nbsp;
-export interface IAvatar {
-  avatarImageEnum: AvatarImageEnum;
-  avatarFace: AvatarFaceEnum;
-  avatarFaceScale: number;
-  faceTexture: string[];
-  partRotateDegree: number[];
-  viewport: Viewport;
+interface JoystickOption {
+  bigCircleRadius?: number;
+  bigCircleColor?: number;
+  bigCircleAlpha?: number;
+  smallCircleRadius?: number;
+  smallCircleColor?: number;
+  smallCircleAlpha?: number;
 }
 &nbsp;
-export enum AvatarParts {
-  LEFT_ARM,
-  LEFT_LEG,
-  BODY,
-  RIGHT_ARM,
-  RIGHT_LEG,
-  FACE,
-}
+// interface IJoystick {
+//   bigCircleRadius: number;
+//   bigCircleColor: number;
+//   bigCircleAlpha: number;
+//   // private smallCircleRadius: number;
+//   // private smallCircleColor: number;
+//   // private smallCircleAlpha: number;
+// }
+export class Joystick extends Container {
+  private bigCircle: Graphics;
+  private bigCircleRadius: number;
+  private smallCircle: Graphics;
+  private smallCircleRadius: number;
 &nbsp;
-export const PARTS_ROTATE_SPEED = <span class="cstat-no" title="statement not covered" >2;</span>
+  // private playerPointer: PlayerPointer;
+<span class="fstat-no" title="function not covered" >  co</span>nstructor(options?: JoystickOption) {
+<span class="cstat-no" title="statement not covered" >    super();</span>
 &nbsp;
-export class Avatar extends DisplayContainer implements IAvatar {
-  public avatarImageEnum: AvatarImageEnum;
-  public avatarFace: AvatarFaceEnum;
-  public avatarFaceScale: number;
-  public faceTexture: string[];
-  public partRotateDegree: number[];
-  public viewport: Viewport;
+    const bigCircleRadius = <span class="cstat-no" title="statement not covered" >options?.bigCircleRadius || 50;</span>
+    const bigCircleColor = <span class="cstat-no" title="statement not covered" >options?.bigCircleColor || 0x112222;</span>
+    const bigCircleAlpha = <span class="cstat-no" title="statement not covered" >options?.bigCircleAlpha || 0.3;</span>
+    const smallCircleRadius = <span class="cstat-no" title="statement not covered" >options?.smallCircleRadius || 20;</span>
+    const smallCircleColor = <span class="cstat-no" title="statement not covered" >options?.smallCircleColor || 0x001010;</span>
+    const smallCircleAlpha = <span class="cstat-no" title="statement not covered" >options?.smallCircleAlpha || 0.3;</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  co</span>nstructor(world: World, viewport: Viewport) {
-<span class="cstat-no" title="statement not covered" >    super(world);</span>
+    const bigCircle = <span class="cstat-no" title="statement not covered" >this.makeCircle(</span>
+      bigCircleColor,
+      bigCircleAlpha,
+      bigCircleRadius,
+    );
+<span class="cstat-no" title="statement not covered" >    this.bigCircleRadius = bigCircleRadius;</span>
+<span class="cstat-no" title="statement not covered" >    this.bigCircle = bigCircle;</span>
+<span class="cstat-no" title="statement not covered" >    this.addChild(bigCircle);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this.avatarImageEnum = AvatarImageEnum.BUNNY;</span>
-<span class="cstat-no" title="statement not covered" >    this.avatarFace = AvatarFaceEnum.FACE_MUTE;</span>
-<span class="cstat-no" title="statement not covered" >    this.avatarFaceScale = 1.0;</span>
-<span class="cstat-no" title="statement not covered" >    this.partRotateDegree = Array.from({length: 6}, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >0)</span>;</span>
-<span class="cstat-no" title="statement not covered" >    this.position.copyFrom(world.startPosition);</span>
-<span class="cstat-no" title="statement not covered" >    this.viewport = viewport;</span>
-<span class="cstat-no" title="statement not covered" >    this.faceTexture = [];</span>
+    const smallCircle = <span class="cstat-no" title="statement not covered" >this.makeCircle(</span>
+      smallCircleColor,
+      smallCircleAlpha,
+      smallCircleRadius,
+    );
+<span class="cstat-no" title="statement not covered" >    this.smallCircleRadius = smallCircleRadius;</span>
+<span class="cstat-no" title="statement not covered" >    this.smallCircle = smallCircle;</span>
+<span class="cstat-no" title="statement not covered" >    bigCircle.addChild(smallCircle);</span>
+<span class="cstat-no" title="statement not covered" >    this.visible = false;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pu</span>blic setAvatar(avatarImageEnum: AvatarImageEnum): void {
-<span class="cstat-no" title="statement not covered" >    this.avatarImageEnum = avatarImageEnum;</span>
-<span class="cstat-no" title="statement not covered" >    this.changeAvatar(this.getAvatarMD());</span>
+<span class="fstat-no" title="function not covered" >  pr</span>ivate makeCircle(color: number, alpha: number, radius: number): Graphics {
+    const circle = <span class="cstat-no" title="statement not covered" >new Graphics();</span>
+<span class="cstat-no" title="statement not covered" >    circle.beginFill(color, alpha);</span>
+<span class="cstat-no" title="statement not covered" >    circle.drawCircle(0, 0, radius);</span>
+<span class="cstat-no" title="statement not covered" >    return circle;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pr</span>otected getAvatarMD(): AvatarData {
-    const avatarName = <span class="cstat-no" title="statement not covered" >this.getAvatarInitialName();</span>
-<span class="cstat-no" title="statement not covered" >    return avatarMDs[avatarName];</span>
+<span class="fstat-no" title="function not covered" >  pu</span>blic revealJoystick(posX: number, posY: number): void {
+<span class="cstat-no" title="statement not covered" >    this.position.set(posX, posY);</span>
+<span class="cstat-no" title="statement not covered" >    this.visible = true;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pr</span>ivate getAvatarInitialName(): string {
-<span class="cstat-no" title="statement not covered" >    return avatarImageMDs[this.avatarImageEnum].avatarInitialName;</span>
+<span class="fstat-no" title="function not covered" >  pu</span>blic setSmallCirclePosition(diff: Vec2, length: number): void {
+<span class="cstat-no" title="statement not covered" >    console.log('Diff', length, this.bigCircleRadius - this.smallCircleRadius);</span>
+<span class="cstat-no" title="statement not covered" >    if (!this.isOuterMost(length))</span>
+<span class="cstat-no" title="statement not covered" >      this.smallCircle.position.set(diff.x, diff.y);</span>
+    else {
+<span class="cstat-no" title="statement not covered" >      this.smallCircle.position.set(</span>
+        (this.bigCircleRadius - this.smallCircleRadius) * (diff.x / length),
+        (this.bigCircleRadius - this.smallCircleRadius) * (diff.y / length),
+      );
+    }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  pu</span>blic changeAvatar(data: DisplayContainerData): void {
-    const newParts: Sprite[] = <span class="cstat-no" title="statement not covered" >[];</span>
-<span class="cstat-no" title="statement not covered" >    data.parts.forEach(<span class="fstat-no" title="function not covered" >pa</span>rt =&gt; {</span>
-      const sprite = <span class="cstat-no" title="statement not covered" >this.makeSpriteFromPartsMD(part);</span>
-<span class="cstat-no" title="statement not covered" >      if (sprite) <span class="cstat-no" title="statement not covered" >newParts.push(sprite);</span></span>
-    });
-    const faceTexture = <span class="cstat-no" title="statement not covered" >this.getAvatarMD().faceTexture;</span>
-<span class="cstat-no" title="statement not covered" >    if (faceTexture) <span class="cstat-no" title="statement not covered" >this.faceTexture = faceTexture;</span></span>
-<span class="cstat-no" title="statement not covered" >    this.removeChildren();</span>
-<span class="cstat-no" title="statement not covered" >    this.parts = newParts;</span>
-<span class="cstat-no" title="statement not covered" >    this.addPartsToChild();</span>
-<span class="cstat-no" title="statement not covered" >    if (data.collisionBox) <span class="cstat-no" title="statement not covered" >this.addCollisionBox(data.collisionBox);</span></span>
+<span class="fstat-no" title="function not covered" >  pr</span>ivate isOuterMost(length: number) {
+<span class="cstat-no" title="statement not covered" >    return length &gt; this.bigCircleRadius - this.smallCircleRadius;</span>
   }
-&nbsp;
-<span class="fstat-no" title="function not covered" >  pu</span>blic swapFace(): void {
-    const textureName = <span class="cstat-no" title="statement not covered" >this.faceTexture[this.avatarFace];</span>
-    const face = <span class="cstat-no" title="statement not covered" >this.children[AvatarParts.FACE] as Sprite;</span>
-    const texture = <span class="cstat-no" title="statement not covered" >ResourceManager.getTexture(textureName, 'avatars.json');</span>
-<span class="cstat-no" title="statement not covered" >    if (texture) <span class="cstat-no" title="statement not covered" >face.texture = texture;</span></span>
+<span class="fstat-no" title="function not covered" >  pu</span>blic hideJoystick(): void {
+<span class="cstat-no" title="statement not covered" >    this.smallCircle.position.set(0);</span>
+<span class="cstat-no" title="statement not covered" >    this.visible = false;</span>
   }
 }
 &nbsp;</pre></td></tr></table></pre>
