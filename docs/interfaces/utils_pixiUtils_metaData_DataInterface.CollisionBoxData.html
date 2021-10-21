@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OfferAnswerDto | front</title>
+	<title>CollisionBoxData | front</title>
 	<meta name="description" content="Documentation for front">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,42 +55,24 @@
 					<a href="../modules.html">front</a>
 				</li>
 				<li>
-					<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignalingHelper</a>
+					<a href="../modules/utils_pixiUtils_metaData_DataInterface.html">utils/pixiUtils/metaData/DataInterface</a>
 				</li>
 				<li>
-					<a href="utils_RTCSignalingHelper.OfferAnswerDto.html">OfferAnswerDto</a>
+					<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html">CollisionBoxData</a>
 				</li>
 			</ul>
-			<h1>Interface OfferAnswerDto</h1>
+			<h1>Interface CollisionBoxData</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>signaling 의 offer 와 answer 에서 교환되는 데이터 전송객체</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>param</dt>
-						<dd><p>offer 나 answer 를 보내는 socketID</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>offer 나 answer 를 받는 socketID</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>createOffer 나 createAnswer 로 만들어진 RTCSessionDescriptionInit</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">OfferAnswerDto</span>
+						<span class="target">CollisionBoxData</span>
 					</li>
 				</ul>
 			</section>
@@ -101,9 +83,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#fromClientId" class="tsd-kind-icon">from<wbr>Client<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#sdp" class="tsd-kind-icon">sdp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_RTCSignalingHelper.OfferAnswerDto.html#toClientId" class="tsd-kind-icon">to<wbr>Client<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#x" class="tsd-kind-icon">x</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#y" class="tsd-kind-icon">y</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,32 +95,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fromClientId" class="tsd-anchor"></a>
-					<h3>from<wbr>Client<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">from<wbr>Client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="height" class="tsd-anchor"></a>
+					<h3>height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/RTCSignalingHelper.ts#L10">src/utils/RTCSignalingHelper.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/pixiUtils/metaData/DataInterface.ts#L10">src/utils/pixiUtils/metaData/DataInterface.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sdp" class="tsd-anchor"></a>
-					<h3>sdp</h3>
-					<div class="tsd-signature tsd-kind-icon">sdp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RTCSessionDescriptionInit</span></div>
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/RTCSignalingHelper.ts#L12">src/utils/RTCSignalingHelper.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/pixiUtils/metaData/DataInterface.ts#L9">src/utils/pixiUtils/metaData/DataInterface.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="toClientId" class="tsd-anchor"></a>
-					<h3>to<wbr>Client<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="x" class="tsd-anchor"></a>
+					<h3>x</h3>
+					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/RTCSignalingHelper.ts#L11">src/utils/RTCSignalingHelper.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/pixiUtils/metaData/DataInterface.ts#L7">src/utils/pixiUtils/metaData/DataInterface.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="y" class="tsd-anchor"></a>
+					<h3>y</h3>
+					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/2226278/front/src/utils/pixiUtils/metaData/DataInterface.ts#L8">src/utils/pixiUtils/metaData/DataInterface.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -150,36 +143,60 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/utils_RTCSignalingHelper.html">utils/RTCSignaling<wbr>Helper</a>
+						<a href="../modules/utils_pixiUtils_metaData_DataInterface.html">utils/pixi<wbr>Utils/meta<wbr>Data/<wbr>Data<wbr>Interface</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/utils_RTCSignalingHelper.default.html" class="tsd-kind-icon">default</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.AvatarData.html" class="tsd-kind-icon">Avatar<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_RTCSignalingHelper.IceDto.html" class="tsd-kind-icon">Ice<wbr>Dto</a>
+						<a href="utils_pixiUtils_metaData_DataInterface.BackgroundData.html" class="tsd-kind-icon">Background<wbr>Data</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="utils_RTCSignalingHelper.OfferAnswerDto.html" class="tsd-kind-icon">Offer<wbr>Answer<wbr>Dto</a>
+						<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html" class="tsd-kind-icon">Collision<wbr>Box<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#fromClientId" class="tsd-kind-icon">from<wbr>Client<wbr>Id</a>
+								<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#height" class="tsd-kind-icon">height</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#sdp" class="tsd-kind-icon">sdp</a>
+								<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#width" class="tsd-kind-icon">width</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="utils_RTCSignalingHelper.OfferAnswerDto.html#toClientId" class="tsd-kind-icon">to<wbr>Client<wbr>Id</a>
+								<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#x" class="tsd-kind-icon">x</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="utils_pixiUtils_metaData_DataInterface.CollisionBoxData.html#y" class="tsd-kind-icon">y</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.DisplayContainerData.html" class="tsd-kind-icon">Display<wbr>Container<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.PartsData.html" class="tsd-kind-icon">Parts<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.StuffData.html" class="tsd-kind-icon">Stuff<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.Vec2.html" class="tsd-kind-icon">Vec2</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.WorldData.html" class="tsd-kind-icon">World<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="utils_pixiUtils_metaData_DataInterface.YoutubeStuffData.html" class="tsd-kind-icon">Youtube<wbr>Stuff<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/utils_pixiUtils_metaData_DataInterface.html#PLAYER_SPEED" class="tsd-kind-icon">PLAYER_<wbr>SPEED</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
