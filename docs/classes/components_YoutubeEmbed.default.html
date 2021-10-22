@@ -89,13 +89,16 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="components_YoutubeEmbed.default.html#containers" class="tsd-kind-icon">containers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="components_YoutubeEmbed.default.html#lastComponentContainer" class="tsd-kind-icon">last<wbr>Component<wbr>Container</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="components_YoutubeEmbed.default.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="components_YoutubeEmbed.default.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="components_YoutubeEmbed.default.html#deleteContainer" class="tsd-kind-icon">delete<wbr>Container</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="components_YoutubeEmbed.default.html#deleteLastRenderedComponent" class="tsd-kind-icon">delete<wbr>Last<wbr>Rendered<wbr>Component</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="components_YoutubeEmbed.default.html#render" class="tsd-kind-icon">render</a></li>
 							</ul>
@@ -123,18 +126,45 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="containers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> containers</h3>
+					<div class="tsd-signature tsd-kind-icon">containers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L14">src/components/YoutubeEmbed.tsx:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="lastComponentContainer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> last<wbr>Component<wbr>Container</h3>
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Component<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/87126ed/front/src/components/YoutubeEmbed.tsx#L13">src/components/YoutubeEmbed.tsx:13</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L13">src/components/YoutubeEmbed.tsx:13</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L41">src/components/YoutubeEmbed.tsx:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> delete</h3>
@@ -145,7 +175,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/87126ed/front/src/components/YoutubeEmbed.tsx#L26">src/components/YoutubeEmbed.tsx:26</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L33">src/components/YoutubeEmbed.tsx:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>componentContainer: <span class="tsd-signature-type">HTMLDivElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="deleteContainer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> delete<wbr>Container</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Container<span class="tsd-signature-symbol">(</span>componentContainer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L28">src/components/YoutubeEmbed.tsx:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -168,7 +221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/87126ed/front/src/components/YoutubeEmbed.tsx#L34">src/components/YoutubeEmbed.tsx:34</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L48">src/components/YoutubeEmbed.tsx:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -185,7 +238,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/87126ed/front/src/components/YoutubeEmbed.tsx#L15">src/components/YoutubeEmbed.tsx:15</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/5c39c9a/front/src/components/YoutubeEmbed.tsx#L16">src/components/YoutubeEmbed.tsx:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -222,10 +275,19 @@
 								<a href="components_YoutubeEmbed.default.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="components_YoutubeEmbed.default.html#containers" class="tsd-kind-icon">containers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="components_YoutubeEmbed.default.html#lastComponentContainer" class="tsd-kind-icon">last<wbr>Component<wbr>Container</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="components_YoutubeEmbed.default.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="components_YoutubeEmbed.default.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="components_YoutubeEmbed.default.html#deleteContainer" class="tsd-kind-icon">delete<wbr>Container</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="components_YoutubeEmbed.default.html#deleteLastRenderedComponent" class="tsd-kind-icon">delete<wbr>Last<wbr>Rendered<wbr>Component</a>
