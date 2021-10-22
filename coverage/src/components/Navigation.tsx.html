@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.18% </span>
+                <span class="strong">35.13% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/108</span>
+                <span class='fraction'>39/111</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>0/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">19.04% </span>
+                <span class="strong">18.6% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>8/42</span>
+                <span class='fraction'>8/43</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.51% </span>
+                <span class="strong">35.13% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>38/107</span>
+                <span class='fraction'>39/111</span>
             </div>
         
             
@@ -390,7 +390,20 @@
 <a name='L331'></a><a href='#L331'>331</a>
 <a name='L332'></a><a href='#L332'>332</a>
 <a name='L333'></a><a href='#L333'>333</a>
-<a name='L334'></a><a href='#L334'>334</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a>
+<a name='L338'></a><a href='#L338'>338</a>
+<a name='L339'></a><a href='#L339'>339</a>
+<a name='L340'></a><a href='#L340'>340</a>
+<a name='L341'></a><a href='#L341'>341</a>
+<a name='L342'></a><a href='#L342'>342</a>
+<a name='L343'></a><a href='#L343'>343</a>
+<a name='L344'></a><a href='#L344'>344</a>
+<a name='L345'></a><a href='#L345'>345</a>
+<a name='L346'></a><a href='#L346'>346</a>
+<a name='L347'></a><a href='#L347'>347</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -524,20 +537,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
@@ -856,14 +882,26 @@ function Navigation(props: NavigationProps): JSX.Element {
     });
   };
 &nbsp;
+  const trackInTracks = <span class="fstat-no" title="function not covered" >(</span>
+    track: MediaStreamTrack,
+    tracks: MediaStreamTrack[],
+  ): boolean =&gt; {
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      tracks.filter(<span class="fstat-no" title="function not covered" >t </span>=&gt; {
+<span class="cstat-no" title="statement not covered" >        return t.id === track.id;</span>
+      }).length &gt; 0
+    );
+  };
+&nbsp;
   const removeVideoTrack = <span class="fstat-no" title="function not covered" >()</span>: void =&gt; {
-<span class="cstat-no" title="statement not covered" >    props.peerManager.screenVideoTracks =</span>
-      props.peerManager.screenVideoTracks.filter(<span class="fstat-no" title="function not covered" >tr</span>ack =&gt; {
-<span class="cstat-no" title="statement not covered" >        return track.kind !== 'video';</span>
-      });
+<span class="cstat-no" title="statement not covered" >    console.log('removeVideoTrackCalled');</span>
 <span class="cstat-no" title="statement not covered" >    props.peerManager.forEachPeer(<span class="fstat-no" title="function not covered" >pe</span>er =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      peer.getSenders().forEach(<span class="fstat-no" title="function not covered" >se</span>nder =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        if (sender.track?.kind === 'video') <span class="cstat-no" title="statement not covered" >peer.removeTrack(sender);</span></span>
+<span class="cstat-no" title="statement not covered" >        if (</span>
+          sender.track &amp;&amp;
+          trackInTracks(sender.track, props.peerManager.screenVideoTracks)
+        )
+<span class="cstat-no" title="statement not covered" >          peer.removeTrack(sender);</span>
       });
       const data: DataDto = <span class="cstat-no" title="statement not covered" >{</span>
         type: DataDtoType.SHARED_SCREEN_CLOSE,
@@ -871,6 +909,7 @@ function Navigation(props: NavigationProps): JSX.Element {
       };
 <span class="cstat-no" title="statement not covered" >      peer.transmitUsingDataChannel(JSON.stringify(data));</span>
     });
+<span class="cstat-no" title="statement not covered" >    props.peerManager.screenVideoTracks.length = 0;</span>
   };
 &nbsp;
   const setOtherSideDrawStartPos = <span class="fstat-no" title="function not covered" >(</span>
@@ -1063,7 +1102,7 @@ export default Navigation;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Oct 22 2021 07:08:39 GMT+0000 (Coordinated Universal Time)
+                at Fri Oct 22 2021 07:21:44 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
