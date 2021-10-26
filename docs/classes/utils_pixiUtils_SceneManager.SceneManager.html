@@ -92,6 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#application" class="tsd-kind-icon">application</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#currentScene" class="tsd-kind-icon">current<wbr>Scene</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#gameCanvas" class="tsd-kind-icon">game<wbr>Canvas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#tickerWorker" class="tsd-kind-icon">ticker<wbr>Worker</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -105,11 +106,16 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#addTickerWorker" class="tsd-kind-icon">add<wbr>Ticker<wbr>Worker</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#changeCanvas" class="tsd-kind-icon">change<wbr>Canvas</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#changeScene" class="tsd-kind-icon">change<wbr>Scene</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#handleVisibilityChange" class="tsd-kind-icon">handle<wbr>Visibility<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#removeTickerWorker" class="tsd-kind-icon">remove<wbr>Ticker<wbr>Worker</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#resize" class="tsd-kind-icon">resize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#runTickerWorker" class="tsd-kind-icon">run<wbr>Ticker<wbr>Worker</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#stopTickerWorker" class="tsd-kind-icon">stop<wbr>Ticker<wbr>Worker</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="utils_pixiUtils_SceneManager.SceneManager.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -141,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">application<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Application</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L6">src/utils/pixiUtils/SceneManager.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L7">src/utils/pixiUtils/SceneManager.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Scene<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils_pixiUtils_Scene.Scene.html" class="tsd-signature-type" data-tsd-kind="Interface">Scene</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L7">src/utils/pixiUtils/SceneManager.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L8">src/utils/pixiUtils/SceneManager.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,7 +167,17 @@
 					<div class="tsd-signature tsd-kind-icon">game<wbr>Canvas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCanvasElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L8">src/utils/pixiUtils/SceneManager.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L9">src/utils/pixiUtils/SceneManager.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="tickerWorker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> ticker<wbr>Worker</h3>
+					<div class="tsd-signature tsd-kind-icon">ticker<wbr>Worker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Worker</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L10">src/utils/pixiUtils/SceneManager.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L24">src/utils/pixiUtils/SceneManager.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L26">src/utils/pixiUtils/SceneManager.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Application</span></h4>
@@ -195,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L18">src/utils/pixiUtils/SceneManager.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L20">src/utils/pixiUtils/SceneManager.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -212,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L12">src/utils/pixiUtils/SceneManager.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L14">src/utils/pixiUtils/SceneManager.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -222,6 +238,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="addTickerWorker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Ticker<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Ticker<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L73">src/utils/pixiUtils/SceneManager.ts:73</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="changeCanvas" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> change<wbr>Canvas</h3>
@@ -232,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L69">src/utils/pixiUtils/SceneManager.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L112">src/utils/pixiUtils/SceneManager.ts:112</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -255,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L55">src/utils/pixiUtils/SceneManager.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L98">src/utils/pixiUtils/SceneManager.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -278,7 +311,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L73">src/utils/pixiUtils/SceneManager.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L116">src/utils/pixiUtils/SceneManager.ts:116</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="handleVisibilityChange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Visibility<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Visibility<wbr>Change<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L63">src/utils/pixiUtils/SceneManager.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -295,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L28">src/utils/pixiUtils/SceneManager.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L30">src/utils/pixiUtils/SceneManager.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -304,6 +354,23 @@
 									<h5>background: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="removeTickerWorker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> remove<wbr>Ticker<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Ticker<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L93">src/utils/pixiUtils/SceneManager.ts:93</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -318,7 +385,41 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L78">src/utils/pixiUtils/SceneManager.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L122">src/utils/pixiUtils/SceneManager.ts:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="runTickerWorker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> run<wbr>Ticker<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Ticker<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L82">src/utils/pixiUtils/SceneManager.ts:82</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="stopTickerWorker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> stop<wbr>Ticker<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">stop<wbr>Ticker<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L89">src/utils/pixiUtils/SceneManager.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -335,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/ca61a53/front/src/utils/pixiUtils/SceneManager.ts#L91">src/utils/pixiUtils/SceneManager.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/cd9798b/front/src/utils/pixiUtils/SceneManager.ts#L135">src/utils/pixiUtils/SceneManager.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -380,6 +481,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#gameCanvas" class="tsd-kind-icon">game<wbr>Canvas</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#tickerWorker" class="tsd-kind-icon">ticker<wbr>Worker</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#app" class="tsd-kind-icon">app</a>
 							</li>
@@ -388,6 +492,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#width" class="tsd-kind-icon">width</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#addTickerWorker" class="tsd-kind-icon">add<wbr>Ticker<wbr>Worker</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#changeCanvas" class="tsd-kind-icon">change<wbr>Canvas</a>
@@ -398,11 +505,23 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#handleVisibilityChange" class="tsd-kind-icon">handle<wbr>Visibility<wbr>Change</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#removeTickerWorker" class="tsd-kind-icon">remove<wbr>Ticker<wbr>Worker</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#resize" class="tsd-kind-icon">resize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#runTickerWorker" class="tsd-kind-icon">run<wbr>Ticker<wbr>Worker</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="utils_pixiUtils_SceneManager.SceneManager.html#stopTickerWorker" class="tsd-kind-icon">stop<wbr>Ticker<wbr>Worker</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="utils_pixiUtils_SceneManager.SceneManager.html#update" class="tsd-kind-icon">update</a>
