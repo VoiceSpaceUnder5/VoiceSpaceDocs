@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/48</span>
+                <span class='fraction'>0/54</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/47</span>
+                <span class='fraction'>0/53</span>
             </div>
         
             
@@ -197,7 +197,13 @@
 <a name='L138'></a><a href='#L138'>138</a>
 <a name='L139'></a><a href='#L139'>139</a>
 <a name='L140'></a><a href='#L140'>140</a>
-<a name='L141'></a><a href='#L141'>141</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -266,6 +272,9 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -276,6 +285,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -283,9 +293,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -400,10 +412,13 @@ export class SceneManager {
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  pr</span>ivate static handleVisibilityChange(): void {
+<span class="cstat-no" title="statement not covered" >    console.log(`Handle Visible: ${document.visibilityState}`);</span>
 <span class="cstat-no" title="statement not covered" >    if (document.visibilityState === 'hidden') {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Is hidden');</span>
 <span class="cstat-no" title="statement not covered" >      SceneManager.runTickerWorker();</span>
 <span class="cstat-no" title="statement not covered" >      SceneManager.application.ticker.stop();</span>
     } else <span class="cstat-no" title="statement not covered" >if (document.visibilityState === 'visible') {</span>
+<span class="cstat-no" title="statement not covered" >      console.log('Is Visible');</span>
 <span class="cstat-no" title="statement not covered" >      SceneManager.stopTickerWorker();</span>
 <span class="cstat-no" title="statement not covered" >      SceneManager.application.ticker.start();</span>
     }
@@ -416,6 +431,7 @@ export class SceneManager {
     );
     const workerBlobUrl = <span class="cstat-no" title="statement not covered" >URL.createObjectURL(tickerWorkerBlob);</span>
 <span class="cstat-no" title="statement not covered" >    SceneManager.tickerWorker = new Worker(workerBlobUrl);</span>
+<span class="cstat-no" title="statement not covered" >    console.log(`AddTickerWorker: ${SceneManager.tickerWorker}`);</span>
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  pr</span>ivate static runTickerWorker(): void {
@@ -423,10 +439,12 @@ export class SceneManager {
 <span class="cstat-no" title="statement not covered" >    SceneManager.tickerWorker.onmessage = <span class="fstat-no" title="function not covered" >ev</span>ent =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      if (event.data.message === 'run') <span class="cstat-no" title="statement not covered" >SceneManager.update(1);</span></span>
     };
+<span class="cstat-no" title="statement not covered" >    console.log(`RunTickerWorker: ${SceneManager.tickerWorker}`);</span>
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  pr</span>ivate static stopTickerWorker() {
 <span class="cstat-no" title="statement not covered" >    SceneManager.tickerWorker.postMessage({run: false});</span>
+<span class="cstat-no" title="statement not covered" >    console.log(`StopTickerWorker: ${SceneManager.tickerWorker}`);</span>
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  pr</span>ivate static removeTickerWorker(): void {
@@ -484,7 +502,7 @@ export class SceneManager {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Oct 26 2021 03:08:29 GMT+0000 (Coordinated Universal Time)
+                at Tue Oct 26 2021 03:49:31 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../../prettify.js"></script>
