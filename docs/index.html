@@ -61,31 +61,32 @@
 				<a href="#-giggle-forest-projectvoicespace-by-team---under5" id="-giggle-forest-projectvoicespace-by-team---under5" style="color: inherit; text-decoration: none;">
 					<h2><img src="https://user-images.githubusercontent.com/35288028/131969010-2f6197cc-2bd6-409e-b1f7-f23ccb77881a.png" alt="img"> Giggle Forest (project.VoiceSpace) by Team - under5</h2>
 				</a>
-				<a href="#개발-목적" id="개발-목적" style="color: inherit; text-decoration: none;">
-					<h3>개발 목적</h3>
+				<a href="#development-goals" id="development-goals" style="color: inherit; text-decoration: none;">
+					<h3>Development Goals</h3>
 				</a>
-				<p>코로나 시대를 겪으면서 대부분의 &#39;만남의 장소&#39;가 Zoom에서 파생된 각종 화상회의 공간으로 빠르게 이동 하고 있습니다. 그런 만큼 부작용도 많은데, 대표적으로 화상회의에서 평소의 대화보다 훨씬 많은 피로도를 느끼는 <a href="https://en.wikipedia.org/wiki/Zoom_fatigue">줌피로도 (Zoom Fatigue)</a>증상이 대두 되고 있습니다. 이러한 피로의 주요 원인을 저희는</p>
+				<p>As we go through the COVID-19, most of the &#39;meeting places&#39; are rapidly moving to various virtual conference spaces started from Zoom. As such, there are many side effects, A typical example is Zoom Fatigue, which causes a lot of fatigue in virtual conferences than usual conversations. We think the main causes of that are</p>
 				<ol>
-					<li>영상</li>
-					<li>딱딱한 화상회의 공간</li>
+					<li>video</li>
+					<li>Rigid video conferencing space
+					Accordingly, we started to development this service with the purpose of creating a service that provides a <strong>video-free</strong>, <strong>realistic conversation</strong>, and a <strong>soft and enjoyable space</strong>.</li>
 				</ol>
-				<p>라고 분석하였고, 이에 따라 <strong>영상없는, 현실감 있는 대화</strong>,<strong>부드럽고 즐거운 공간</strong>을 제공하는 서비스를 만들려는 목적으로 개발을 시작하였습니다.</p>
 				<hr>
-				<a href="#소개-동영상" id="소개-동영상" style="color: inherit; text-decoration: none;">
-					<h3>소개 동영상</h3>
+				<a href="#introduction-video-with-korean-language" id="introduction-video-with-korean-language" style="color: inherit; text-decoration: none;">
+					<h3>Introduction Video (with Korean language)</h3>
 				</a>
-				<p><a href="https://youtu.be/Tdtk7nvgxqo"><img src="https://img.youtube.com/vi/Tdtk7nvgxqo/maxresdefault.jpg" alt="YoutubeVideo"></a></p>
-				<hr>
-				<a href="#데모-사이트-링크" id="데모-사이트-링크" style="color: inherit; text-decoration: none;">
-					<h3>데모 사이트 링크</h3>
+				<a href="#" id="" style="color: inherit; text-decoration: none;">
+					<h2><a href="https://youtu.be/ufxFfA7_ntU"><img src="https://img.youtube.com/vi/ufxFfA7_ntU/maxresdefault.jpg" alt="YoutubeVideo"></a></h2>
+				</a>
+				<a href="#demo-website-link" id="demo-website-link" style="color: inherit; text-decoration: none;">
+					<h3>Demo Website Link</h3>
 				</a>
 				<ul>
-					<li>주소 : <a href="https://giggleforest.com">https://giggleforest.com</a> </li>
-					<li><a href="https://giggleforest.com"><strong>여기</strong></a>에서 바로 체험해보실 수 있습니다.</li>
+					<li>url : <a href="https://giggleforest.com">https://giggleforest.com</a></li>
+					<li>you can try it right <a href="https://giggleforest.com"><strong>here</strong></a></li>
 				</ul>
 				<hr>
-				<a href="#개발-및-배포-환경" id="개발-및-배포-환경" style="color: inherit; text-decoration: none;">
-					<h3>개발 및 배포 환경</h3>
+				<a href="#development-and-deployment-environment" id="development-and-deployment-environment" style="color: inherit; text-decoration: none;">
+					<h3>Development and deployment environment</h3>
 				</a>
 				<table>
 					<thead>
@@ -96,12 +97,12 @@
 						</tr>
 					</thead>
 					<tbody><tr>
-							<td>Front</td>
+							<td>FrontEnd</td>
 							<td>React</td>
 							<td>17.0.2</td>
 						</tr>
 						<tr>
-							<td>Back</td>
+							<td>BackEnd</td>
 							<td>NestJS</td>
 							<td>7.6.15</td>
 						</tr>
@@ -117,8 +118,8 @@
 						</tr>
 				</tbody></table>
 				<hr>
-				<a href="#주-사용-라이브러리" id="주-사용-라이브러리" style="color: inherit; text-decoration: none;">
-					<h3>주 사용 라이브러리</h3>
+				<a href="#main-library" id="main-library" style="color: inherit; text-decoration: none;">
+					<h3>Main library</h3>
 				</a>
 				<table>
 					<thead>
@@ -129,68 +130,153 @@
 					</thead>
 					<tbody><tr>
 							<td>WebRTC</td>
-							<td>유저간 끊김없는 음성, 데이터 전송</td>
+							<td>Seamless voice and data transmission between users</td>
 						</tr>
 						<tr>
-							<td>WebGL</td>
-							<td>영상을 대신하는 애니메이션을 클라이언트의 그레픽처리 하드웨어를 사용하여 출력</td>
+							<td>WebGL(PixiJS)</td>
+							<td>Outputs animation instead of video, using the client&#39;s graphics processing hardware</td>
 						</tr>
 						<tr>
 							<td>WebAudioAPI</td>
-							<td>영상없이도 현실감있는 대화를 구현하기 위한 음성분석 및 컨트롤</td>
+							<td>Voice analysis and control for realizing realistic conversations without video</td>
 						</tr>
 						<tr>
 							<td>Jest</td>
-							<td>구현된 Component들과 Class의 Unit, Integration Test</td>
+							<td>Unit and Integration Test of implemented components and classes</td>
 						</tr>
 				</tbody></table>
 				<hr>
-				<a href="#시스템-구성도" id="시스템-구성도" style="color: inherit; text-decoration: none;">
-					<h3>시스템 구성도</h3>
+				<a href="#system-diagram" id="system-diagram" style="color: inherit; text-decoration: none;">
+					<h3>System diagram</h3>
 				</a>
-				<a href="#전체적인-시스템-구성" id="전체적인-시스템-구성" style="color: inherit; text-decoration: none;">
-					<h4>전체적인 시스템 구성</h4>
+				<a href="#overall-system-configuration" id="overall-system-configuration" style="color: inherit; text-decoration: none;">
+					<h4>Overall system configuration</h4>
 				</a>
 				<ul>
-					<li>WebRTC를 이용한 Peer-to-peer 연결이 가장 중요한 부분 입니다.</li>
-					<li>이 p2p 연결을 통해 audio stream 을 주고 받으며, avatar 관련 데이터 또한 지속적으로 서로에게 전송합니다.</li>
-					<li>따라서 처음 유저가 접속하게되면 back signaling server 를 이용하여 p2p 연결 수립 부터 하게 됩니다.</li>
-					<li>이후 연결이 완료되면 전송된 audio stream 을 지속적으로 실행하고, 전송된 avatar 정보를 통해 webGL 기술로 매 프레임 Animation 을 그려 냅니다.</li>
+					<li>Peer-to-peer connection using WebRTC is the most important part.</li>
+					<li>Audio streams are exchanged through this P2P connection, and avatar-related data is also continuously transmitted to each other.</li>
+					<li>Therefore, when a user connects for the first time, the P2P connection is established using the back signaling server.</li>
+					<li>As the connection is completed, the transmitted audio stream is continuously played, and animation is drawn every frame using WebGL through the transmitted avatar information.
+					<img src="https://user-images.githubusercontent.com/74593890/139775166-f036b4c0-1584-4ecd-9444-5a1788fec82c.png" alt="image"></li>
 				</ul>
-				<p><img src="https://user-images.githubusercontent.com/74593890/131950983-cf735bf4-3a74-4074-bf3d-1bf79e3fc6cd.png" alt="image"></p>
-				<a href="#다수의-peer-연결-방식" id="다수의-peer-연결-방식" style="color: inherit; text-decoration: none;">
-					<h4>다수의 Peer 연결 방식</h4>
+				<a href="#multiple-peer-connection-architecture" id="multiple-peer-connection-architecture" style="color: inherit; text-decoration: none;">
+					<h4>Multiple peer connection architecture</h4>
 				</a>
 				<ul>
-					<li>현재는 누구나 자신의 서버에서 서비스 할 수 있는 프로젝트를 지향하기 때문에 back server 의 역할을 최소화 하고자 Full Mesh 형태로 다수의 p2p 연결을 수립하게 하였습니다.</li>
-					<li>이후 본격적으로 서비스 하게 된다면, SFU방식으로 다수의 연결방식을 변경할 계획입니다.
-					<img src="https://www.itrelease.com/wp-content/uploads/2021/06/Full-Mesh-Topology-1024x640.jpg" alt="Advantages and disadvantages of mesh topology - IT Release"></li>
+					<li>So we aim for a project that anyone can service on their own server, that a number of P2P connections were established in <strong>Full Mesh</strong> in order to minimize the role of the back server.</li>
+					<li>If we launch this service, the architecture may be restructured using <strong>SFU</strong>.<img src="https://www.itrelease.com/wp-content/uploads/2021/06/Full-Mesh-Topology-1024x640.jpg" width="600" height="400"></li>
+				</ul>
+				<a href="#page-infomation" id="page-infomation" style="color: inherit; text-decoration: none;">
+					<h4>Page Infomation</h4>
+				</a>
+				<ol>
+					<li>Home Page<img src="https://user-images.githubusercontent.com/74593890/140017019-76c02218-0044-498d-a08e-10981f3b3ef5.png" width="200"></li>
+				</ol>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>Component Path</td>
+							<td><a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/pages/homePage/Home.tsx">/front/src/pages/homePage/Home.tsx</a></td>
+						</tr>
+						<tr>
+							<td>URL</td>
+							<td>/</td>
+						</tr>
+						<tr>
+							<td>Role</td>
+							<td>Route to SettingComponent (/setting) with random or specific(input) roomId</td>
+						</tr>
+						<tr>
+							<td>Remark</td>
+							<td><strong>자세히 알아보세요</strong> is connected with this github page</td>
+						</tr>
+				</tbody></table>
+				<hr>
+				<ol start="2">
+					<li>Setting Page<img src="https://user-images.githubusercontent.com/74593890/140028049-f3f2217f-ec49-40fe-ad9e-058d97e0c0ab.png" width="200"></li>
+				</ol>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>Component Path</td>
+							<td><a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/pages/settingPage/Setting.tsx">/front/src/pages/settingPage/Setting.tsx</a></td>
+						</tr>
+						<tr>
+							<td>URL</td>
+							<td>/setting</td>
+						</tr>
+						<tr>
+							<td>Role</td>
+							<td>Select mic, speaker device and avatar information (nickname and avatarImage) and route to SpaceComponent with selected values</td>
+						</tr>
+						<tr>
+							<td>Remark</td>
+							<td>Only Chrome browser is fully supported</td>
+						</tr>
+				</tbody></table>
+				<hr>
+				<ol start="3">
+					<li>Space Page<img src="https://user-images.githubusercontent.com/74593890/140028152-07059817-a7b0-44be-bdc3-03a1093f623d.png" width="200"></li>
+				</ol>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>Component Path</td>
+							<td><a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/pages/spacePage/Space.tsx">/front/src/pages/spacePage/Space.tsx</a></td>
+						</tr>
+						<tr>
+							<td>URL</td>
+							<td>/space</td>
+						</tr>
+						<tr>
+							<td>Role</td>
+							<td>- Draw map and avatars using <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/tree/master/front/src/utils/pixiUtils">pixiUtils</a> <br/> - Establish P2P connection and transfer avatar data using <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/classes/utils_RTCGameUtils.Peer.html">Peer</a>, <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/classes/utils_RTCGameUtils.default.html">PeerManager</a> <br/> - Analyze voice for lip sync using <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/classes/utils_RTCGameUtils.AudioAnalyser.html">AudioAnalyer</a> <br/> - Control all of settings (with <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/components/Navigation.tsx">Navigation Component</a></td>
+						</tr>
+						<tr>
+							<td>Remark</td>
+							<td>- If you want to customize world map, see <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/utils/pixiUtils/World.ts">World.ts</a> and <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/utils/pixiUtils/metaData/world1.json">world1.json</a> <br/> - If you want to add some special stuff (like Youtube sign), see <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/utils/pixiUtils/Stuff.ts">Stuff.ts</a> <br/> - If you want to Improve lip sync logic, see <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/classes/utils_RTCGameUtils.AudioAnalyser.html">AudioAnalyer</a> <br/> - If you want to develop your own signaling server, see <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/utils/RTCSignalingHelper.ts">RTCSignalingHelper.ts</a> <br/> - If you want to add stun/turn server, see <a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/front/src/utils/IceServerList.ts">IceServerList.ts</a></td>
+						</tr>
+				</tbody></table>
+				<hr>
+				<a href="#main-function" id="main-function" style="color: inherit; text-decoration: none;">
+					<h3>Main function</h3>
+				</a>
+				<ul>
+					<li>Smooth animation using WebGL in a outstanding level (reducing eye fatigue)</li>
+					<li>Real-time voice chat with very low latency using WebRTC (reducing fatigue from delay)</li>
+					<li>The more a distance between avatars increases, the more voice volume also decreases (like realistic meeting)</li>
+					<li>A function that analyzes the voice and changes the shape of the avatar&#39;s mouth to match the pronunciation (like realistic meeting)</li>
+					<li>The size of the avatar&#39;s face changes according to the volume of the voice. (realistic voice visualization)</li>
+					<li><img src="https://user-images.githubusercontent.com/68804133/139776993-f7d43f8f-adab-426d-a89d-3af94902d6e6.gif" alt="gif"></li>
+				</ul>
+				<a href="#you-can-try-it-right-here" id="you-can-try-it-right-here" style="color: inherit; text-decoration: none;">
+					<h3>you can try it <a href="https://giggleforest.com"><strong>right here</strong></a></h3>
+				</a>
+				<hr>
+				<a href="#main-features-being-added-advancement" id="main-features-being-added-advancement" style="color: inherit; text-decoration: none;">
+					<h3>Main features being added (Advancement)</h3>
+				</a>
+				<ul>
+					<li>map customization</li>
 				</ul>
 				<hr>
-				<a href="#주요-기능" id="주요-기능" style="color: inherit; text-decoration: none;">
-					<h3>주요 기능</h3>
-				</a>
-				<ul>
-					<li>WebGL 을 이용한 굉장히 부드러운 애니메이션 (눈의 피로감 감소)</li>
-					<li>WebRTC 를 이용한 현실과 같은 매우 낮은 레이턴시의 음성채팅 (딜레이로부터 오는 피로감 감소)</li>
-					<li>Avatar 끼리의 거리가 멀어질수록, 음성 볼륨도 낮아지는 기능 (현실감 있는 음성 채팅)</li>
-					<li>목소리 크기에 따라 아바타의 얼굴 크기가 변함 (현실감 있는 음성 시각화)
-					<img src="https://user-images.githubusercontent.com/74593890/131952354-8176e60f-da09-4b66-9d6a-1356eb40a7d6.gif" alt="gif"></li>
-				</ul>
-				<a href="#여기에서-바로-체험해보실-수-있습니다" id="여기에서-바로-체험해보실-수-있습니다" style="color: inherit; text-decoration: none;">
-					<h3><a href="https://giggleforest.com"><strong>여기</strong></a>에서 바로 체험해보실 수 있습니다.</h3>
-				</a>
-				<hr>
-				<a href="#주요-추가중인-기능-고도화" id="주요-추가중인-기능-고도화" style="color: inherit; text-decoration: none;">
-					<h3>주요 추가중인 기능 (고도화)</h3>
-				</a>
-				<ul>
-					<li>음성을 분석하여 해당 발음에 맞게 아바타의 입모양이 바뀌는 기능 (현실감 있는 음성 채팅)</li>
-					<li>아바타들이 움직이는 맵을 커스터마이징 하는 기능</li>
-				</ul>
-				<hr>
-				<a href="#프로젝트-시작하기" id="프로젝트-시작하기" style="color: inherit; text-decoration: none;">
-					<h3>프로젝트 시작하기</h3>
+				<a href="#start-project" id="start-project" style="color: inherit; text-decoration: none;">
+					<h3>Start project</h3>
 				</a>
 				<p>in back folder</p>
 				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span>
@@ -201,62 +287,63 @@
 <span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">start</span>
 </code></pre>
 				<ul>
-					<li>front 폴더의 .env.development 에서 백엔드 주소를 변경 하실 수 있습니다.</li>
+					<li>You can change the backend address in <strong>.env.development</strong> in the front folder.</li>
 				</ul>
 				<hr>
-				<a href="#프로젝트-배포하기" id="프로젝트-배포하기" style="color: inherit; text-decoration: none;">
-					<h3>프로젝트 배포하기</h3>
+				<a href="#deploy-the-project" id="deploy-the-project" style="color: inherit; text-decoration: none;">
+					<h3>Deploy the project</h3>
 				</a>
 				<a href="#front" id="front" style="color: inherit; text-decoration: none;">
 					<h4>Front</h4>
 				</a>
 				<ol>
-					<li>npm run build (in front folder) (.env.production) 의 값이 적용됩니다.</li>
-					<li>위 스크립트의 아웃풋으로 나온 build 폴더를 root 로 하여 serve (저희팀은 nginx 를 사용하였습니다.)</li>
+					<li>npm run build (in front folder) The value of (.env.production) applies.</li>
+					<li>Serve the build folder output from the above script as root (our team used nginx)</li>
 				</ol>
 				<a href="#back" id="back" style="color: inherit; text-decoration: none;">
 					<h4>Back</h4>
 				</a>
 				<ol>
-					<li>npm run build (in back folder) (이때 만약 https 로 설정하시길 원하신다면 main.ts 의 내용을 바꿔주세요 (주석참조))</li>
-					<li>위 스크립트의 아웃풋으로 나온 dist 폴더의 main.js 를 nodeJS 로 실행하세요.</li>
+					<li>npm run build (in back folder) (In this case, if you want to set it to https, please change the contents of main.ts (see comments))</li>
+					<li>Execute main.js in the dist folder as the output of the above script as NodeJS.</li>
 				</ol>
 				<hr>
-				<a href="#문서" id="문서" style="color: inherit; text-decoration: none;">
-					<h3>문서</h3>
+				<a href="#document" id="document" style="color: inherit; text-decoration: none;">
+					<h3>Document</h3>
 				</a>
 				<ul>
-					<li>각종 Component, Class, Function 정보는 <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/">여기</a>에서 확인 하실 수 있습니다.</li>
+					<li>Information on various components, classes, and functions can be found <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/docs/">here</a>.</li>
 				</ul>
 				<hr>
-				<a href="#테스트" id="테스트" style="color: inherit; text-decoration: none;">
-					<h3>테스트</h3>
+				<a href="#test" id="test" style="color: inherit; text-decoration: none;">
+					<h3>Test</h3>
 				</a>
-				<a href="#front-폴더에서" id="front-폴더에서" style="color: inherit; text-decoration: none;">
-					<h4>front 폴더에서</h4>
+				<a href="#in-front-folder" id="in-front-folder" style="color: inherit; text-decoration: none;">
+					<h4>In front folder</h4>
 				</a>
 				<ul>
-					<li><p>unit test</p>
-						<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">test</span>
+					<li>unit test</li>
+				</ul>
+				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">test</span>
 </code></pre>
-					</li>
-					<li><p>unit test with coverage report</p>
-						<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">testCover</span>
+				<ul>
+					<li>unit test with coverage report</li>
+				</ul>
+				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">testCover</span>
 </code></pre>
-					</li>
-					<li><p>현재 master 의 커버리지 레포트는 <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/coverage/">여기</a>에서 보실 수 있습니다.</p>
-					</li>
+				<ul>
+					<li>The current master&#39;s coverage report can be viewed <a href="https://voicespaceunder5.github.io/VoiceSpaceDocs/coverage/">here</a></li>
 				</ul>
 				<hr>
-				<a href="#라이센스" id="라이센스" style="color: inherit; text-decoration: none;">
-					<h3>라이센스</h3>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h3>License</h3>
 				</a>
 				<ul>
 					<li><a href="https://github.com/VoiceSpaceUnder5/VoiceSpace/blob/master/LICENSE">MIT</a></li>
 				</ul>
 				<hr>
-				<a href="#팀원" id="팀원" style="color: inherit; text-decoration: none;">
-					<h3>팀원</h3>
+				<a href="#team-information" id="team-information" style="color: inherit; text-decoration: none;">
+					<h3>Team Information</h3>
 				</a>
 				<table>
 					<thead>
@@ -272,15 +359,15 @@
 					<tbody><tr>
 							<td>kilee</td>
 							<td><a href="mailto:gnsdlrl@daum.net">gnsdlrl@daum.net</a></td>
-							<td>팀장</td>
-							<td>디자인, 프로젝트 배포 및 관리</td>
+							<td>Leader</td>
+							<td>Design, project deployment and management</td>
 							<td>Front</td>
 							<td>AWS, Github Action, CI/CD, React, Typescript</td>
 						</tr>
 						<tr>
 							<td>honlee</td>
 							<td><a href="mailto:kij753@naver.com">kij753@naver.com</a></td>
-							<td>팀원</td>
+							<td>member</td>
 							<td>Front</td>
 							<td>Back</td>
 							<td>AWS, React, NestJS, Typescript</td>
@@ -288,7 +375,7 @@
 						<tr>
 							<td>hyeonkim</td>
 							<td><a href="mailto:hyongtiii@gmail.com">hyongtiii@gmail.com</a></td>
-							<td>팀원</td>
+							<td>member</td>
 							<td>Back</td>
 							<td>Front</td>
 							<td>React, NestJS, Typescript</td>
@@ -296,13 +383,12 @@
 						<tr>
 							<td>mijeong</td>
 							<td><a href="mailto:minje70@naver.com">minje70@naver.com</a></td>
-							<td>팀원</td>
+							<td>member</td>
 							<td>Front</td>
 							<td>Back</td>
 							<td>React, NestJS, Typescript</td>
 						</tr>
 				</tbody></table>
-				<hr>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
